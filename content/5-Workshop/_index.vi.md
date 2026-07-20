@@ -6,28 +6,38 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Workshop Campus IT Support Ticket Portal
 
+#### Tổng quan project
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+Workshop này ghi lại quá trình triển khai **Campus IT Support Ticket Portal**, một hệ thống web helpdesk serverless dùng để tiếp nhận và quản lý yêu cầu hỗ trợ kỹ thuật trong môi trường trường học.
 
-#### Tổng quan
+Hệ thống sau khi triển khai cho phép người dùng đăng nhập, gửi ticket hỗ trợ, upload file đính kèm và theo dõi trạng thái ticket. Admin có thể xem toàn bộ ticket, lọc yêu cầu, cập nhật trạng thái, ghi chú xử lý và xóa ticket khi cần.
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+#### Kiến trúc
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+![Kiến trúc Campus IT Support Ticket Portal](/images/5-Workshop/ticket-portal-architecture.png)
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+#### Các dịch vụ AWS sử dụng
+
+| Dịch vụ | Vai trò trong workshop |
+| --- | --- |
+| AWS Amplify Hosting | Host và deploy frontend từ GitHub |
+| Amazon Cognito | Xử lý đăng ký, đăng nhập, JWT token và group `Users`/`Admins` |
+| Amazon API Gateway | Cung cấp API endpoint và xác thực Cognito JWT token |
+| AWS Lambda | Xử lý nghiệp vụ ticket và kiểm tra quyền truy cập |
+| Amazon DynamoDB | Lưu dữ liệu ticket |
+| Amazon S3 | Lưu file đính kèm của ticket |
+| AWS IAM | Cấp quyền cho Lambda truy cập DynamoDB, S3 và CloudWatch |
+| Amazon CloudWatch | Lưu log/metrics để debug |
+| Amazon Route 53 | Đã thử đăng ký custom domain, nhưng hiện project dùng domain mặc định của Amplify |
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
+1. [Kết quả project và kiến trúc](5.1-Workshop-overview/)
 2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+3. [Host frontend với AWS Amplify](5.3-Amplify-hosting/)
+4. [Xác thực với Amazon Cognito](5.4-Cognito-authentication/)
+5. [Backend API với API Gateway và Lambda](5.5-Backend-api/)
+6. [Lưu trữ dữ liệu với DynamoDB và S3](5.6-Data-storage/)
+7. [Kiểm thử, monitoring và cleanup](5.7-Testing-monitoring-cleanup/)

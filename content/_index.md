@@ -5,21 +5,21 @@ description = "FCJ Cloud Journey Internship Report"
 
 # Internship Report - FCJ Cloud Journey
 
-&emsp; **Name:** A Nguyen Van
+&emsp; **Name:** Huỳnh Hữu Thiện
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** thienhuynh681@gmail.com
 
 &emsp; **University:** Ho Chi Minh City University of Technology and Education
 
-&emsp; **Major:** Information Technology
+&emsp; **Major:** Công nghệ thông tin
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** 22DTHE3
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
-&emsp; **Internship Position:** FCJ Cloud Intern
+&emsp; **Internship Position:** Thực tập sinh mảng Điện toán đám mây tại FCJ
 
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
+&emsp; **Internship Duration:** 20/04/2026 – 12/07/2026
 
 ![Your profile picture](/images/avatar.png)
 

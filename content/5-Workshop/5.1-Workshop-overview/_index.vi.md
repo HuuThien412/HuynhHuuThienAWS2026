@@ -1,19 +1,32 @@
 ---
-title : "Giới thiệu"
-date : 2024-01-01 
-weight : 1
-chapter : false
-pre : " <b> 5.1. </b> "
+title: "Kết quả project và kiến trúc"
+date: 2024-01-01
+weight: 1
+chapter: false
+pre: " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+### Kết quả project
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+Project sau khi hoàn thành là một website IT support ticket portal được triển khai trên AWS. Hệ thống có hai giao diện chính:
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+| Giao diện | Chức năng chính |
+| --- | --- |
+| User Portal | Đăng nhập, gửi ticket, upload file đính kèm, xem ticket của mình |
+| Admin Console | Xem toàn bộ ticket, lọc ticket, cập nhật trạng thái, ghi chú xử lý, xóa ticket |
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+### Luồng kiến trúc
+
+1. User/Admin truy cập website thông qua HTTPS.
+2. AWS Amplify phục vụ frontend UI.
+3. Frontend chuyển người dùng đến Amazon Cognito để đăng ký/đăng nhập.
+4. Cognito trả JWT token về frontend.
+5. Frontend gửi API request kèm JWT token đến API Gateway.
+6. API Gateway xác thực token và invoke Lambda.
+7. Lambda tạo, đọc, cập nhật hoặc xóa dữ liệu ticket trong DynamoDB và lưu file đính kèm vào S3.
+
+![Kiến trúc Campus IT Support Ticket Portal](/images/5-Workshop/ticket-portal-architecture.png)
+
+### Kết quả mong đợi
+
+Sau khi hoàn thành workshop, hệ thống cần hỗ trợ luồng user/admin đã xác thực, quản lý ticket, lưu file đính kèm, ghi log backend và có tài liệu cleanup.

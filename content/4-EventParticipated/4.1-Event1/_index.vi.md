@@ -10,8 +10,6 @@ pre: " <b> 4.1. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
-
 ### Mục Đích Của Sự Kiện
 
 - Chia sẻ best practices trong thiết kế ứng dụng hiện đại
