@@ -1,4 +1,4 @@
----
+﻿---
 title: "Học AWS từ tạo tài khoản, IAM và kiểm soát chi phí"
 date: 2026-07-01
 weight: 1
@@ -6,23 +6,27 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-Khi bắt đầu học AWS, tôi nhận ra bài học đầu tiên không phải là xây dựng ngay một hệ thống lớn. Bài học đầu tiên là học cách sử dụng một cloud account sao cho an toàn. AWS cung cấp rất nhiều dịch vụ mạnh, nhưng điều đó cũng có nghĩa là người học cần hiểu về tài khoản, billing, phân quyền và quản lý tài nguyên cơ bản ngay từ đầu.
+Khi mới bắt đầu học AWS, tôi từng nghĩ phần khó nhất sẽ là triển khai được một hệ thống chạy trên cloud. Nhưng sau vài buổi đầu thực hành, tôi nhận ra việc đầu tiên cần làm tốt lại là những thứ rất cơ bản: tạo tài khoản đúng cách, hiểu region mình đang dùng, biết chỗ kiểm tra chi phí và không cấp quyền quá rộng cho tài nguyên.
 
-Tác vụ học tập đầu tiên của tôi là tạo và chuẩn bị AWS account. Sau khi đăng nhập, tôi dành thời gian làm quen với AWS Management Console. Ban đầu giao diện console khá rộng vì mỗi dịch vụ có một trang quản lý, cấu hình và thuật ngữ riêng. Tôi học cách tìm kiếm dịch vụ, kiểm tra region đang sử dụng, mở dashboard của từng dịch vụ và nhận biết các khu vực quen thuộc như EC2, S3, IAM, Billing và CloudWatch. Việc làm quen này giúp các bước thực hành sau dễ hơn vì tôi có thể thao tác trong môi trường AWS tự tin hơn.
+Việc đầu tiên tôi làm là đăng nhập vào AWS Management Console và làm quen với giao diện. Lúc đầu tôi khá rối vì console có rất nhiều dịch vụ, mỗi dịch vụ lại có dashboard và cách đặt tên riêng. Tôi phải thử tìm từng dịch vụ như EC2, S3, IAM, Billing và CloudWatch để quen dần vị trí của chúng. Một việc nhỏ nhưng giúp tôi tránh nhầm về sau là luôn nhìn lại region ở góc trên bên phải trước khi tạo tài nguyên. Có lúc tôi tìm một resource không thấy, sau đó mới biết mình đang xem sai region.
 
-Tác vụ quan trọng tiếp theo là kiểm soát chi phí. Khi làm việc ở môi trường local, sai sót thường chỉ làm mất thời gian. Nhưng khi làm việc trên cloud, sai sót có thể tạo ra chi phí thật. Vì vậy, tôi học cách kiểm tra Billing Dashboard và AWS Free Tier thường xuyên. Tôi cũng chú ý những dịch vụ có thể phát sinh phí nếu để tài nguyên chạy sau khi test, ví dụ EC2 instance, NAT Gateway, Route 53 domain, load balancer hoặc dữ liệu lưu trữ. Thói quen này giúp tôi hiểu rằng cost control là một phần của cloud engineering, không chỉ là việc quản trị tài khoản.
+Sau phần làm quen console, tôi bắt đầu chú ý nhiều hơn đến Billing Dashboard. Đây là phần tôi nghĩ sinh viên học AWS rất nên kiểm tra thường xuyên. Khi làm local, nếu cấu hình sai thì thường chỉ mất thời gian sửa. Còn trên cloud, nếu tạo tài nguyên rồi quên xóa, chi phí có thể phát sinh thật. Vì vậy tôi tập thói quen sau mỗi buổi thực hành đều kiểm tra Billing, Free Tier và danh sách resource đã tạo.
 
-Một bài học nền tảng khác là IAM. IAM là một trong những dịch vụ quan trọng nhất của AWS vì nó kiểm soát ai được truy cập tài nguyên nào. Tôi học sự khác nhau giữa user, group, role và policy. Ban đầu, việc cấp quyền rộng có vẻ tiện hơn khi thực hành. Tuy nhiên, AWS best practices khuyến khích nguyên tắc least privilege: mỗi identity hoặc service chỉ nên có đúng quyền nó cần. Ý tưởng này trở nên quan trọng hơn khi tôi làm việc với Lambda, DynamoDB, S3 và API Gateway.
+Trong quá trình học, tôi để ý một số dịch vụ dễ phát sinh phí nếu không quản lý kỹ, ví dụ EC2 instance, NAT Gateway, Load Balancer, Route 53 domain hoặc dữ liệu lưu trữ lâu dài. Tôi chưa dùng tất cả các dịch vụ đó trong project cuối, nhưng việc biết trước giúp tôi cẩn thận hơn khi đọc workshop hoặc làm theo hướng dẫn. Với tôi, kiểm soát chi phí không còn là việc phụ, mà là một phần của cách học cloud có trách nhiệm.
 
-Ví dụ, nếu một Lambda function chỉ cần ghi dữ liệu ticket vào DynamoDB, function đó không nên có quyền administrator. Nếu một function cần upload file lên S3, IAM role nên giới hạn trong bucket và action cần thiết. Việc học IAM từ sớm giúp tôi hiểu rằng security cần được tính từ đầu, kể cả với project sinh viên.
+Phần tiếp theo tôi học là IAM. Ban đầu IAM hơi khô vì nhiều khái niệm giống nhau: user, group, role, policy. Tôi mất một thời gian để phân biệt user là danh tính người dùng, group dùng để gom quyền cho nhiều user, role thường được service sử dụng, còn policy là phần mô tả quyền được phép làm gì. Khi hiểu được các khái niệm này, tôi mới thấy vì sao AWS luôn nhấn mạnh nguyên tắc least privilege.
 
-Tôi cũng thực hành một số tác vụ EC2 cơ bản. Việc tạo và xóa EC2 instance giúp tôi hiểu khái niệm máy chủ ảo trên AWS. Tôi học về AMI, instance type, key pair và security group. Dù project cuối cùng của tôi tập trung nhiều hơn vào serverless, EC2 vẫn hữu ích vì nó giúp tôi hiểu mô hình compute truyền thống trước khi so sánh với serverless compute.
+Lúc thực hành, có những lúc tôi muốn cấp quyền rộng để làm cho nhanh. Nhưng khi liên hệ với project Ticket Portal, tôi thấy cách đó không ổn. Ví dụ Lambda chỉ cần đọc/ghi ticket trong DynamoDB thì không nên có toàn quyền Administrator. Nếu Lambda chỉ upload file đính kèm lên một S3 bucket cụ thể, quyền của role cũng nên giới hạn vào bucket đó. Việc học IAM từ sớm giúp tôi nhìn security như một phần của thiết kế, không phải bước làm cho có ở cuối project.
 
-Ngoài ra, tôi tìm hiểu sơ bộ Amazon Bedrock. Tôi không dùng Bedrock làm dịch vụ chính trong project cuối, nhưng việc tìm hiểu dịch vụ này giúp tôi thấy AWS không chỉ là hạ tầng. AWS còn có các dịch vụ managed ở tầng cao hơn, hỗ trợ phát triển ứng dụng hiện đại và AI.
+Tôi cũng thực hành tạo EC2 instance để hiểu compute truyền thống trên AWS. Khi tạo instance, tôi phải chọn AMI, instance type, key pair, security group và network. Những bước này giúp tôi hiểu một máy chủ ảo trên AWS được cấu hình như thế nào. Dù project cuối cùng của tôi dùng serverless nhiều hơn, EC2 vẫn là phần đáng học vì nó giúp tôi có nền tảng để so sánh với Lambda.
 
-Bài học chính trong giai đoạn đầu khá rõ ràng: trước khi xây dựng ứng dụng trên AWS, người học cần hiểu môi trường tài khoản. Một quá trình học AWS tốt nên bắt đầu từ việc dùng account an toàn, kiểm soát billing, hiểu IAM và làm quen console. Những kỹ năng này có vẻ cơ bản nhưng giúp tránh nhiều lỗi phổ biến về sau.
+Một lỗi nhỏ tôi gặp khi học EC2 là cấu hình security group chưa đúng nên không truy cập được instance như mong muốn. Từ lỗi đó tôi hiểu rằng không phải cứ tạo tài nguyên xong là dùng được ngay. Network rule, port, inbound traffic và quyền truy cập đều ảnh hưởng trực tiếp đến kết quả thực hành. Những lỗi nhỏ như vậy làm tôi nhớ bài lâu hơn so với chỉ đọc tài liệu.
 
-Với tôi, giai đoạn này tạo nền tảng cho toàn bộ quá trình thực tập. Sau khi biết cách thao tác trên console, kiểm tra chi phí và suy nghĩ về quyền truy cập, tôi sẵn sàng hơn để thực hành các dịch vụ core và xây dựng project serverless ticket portal.
+Ngoài các dịch vụ nền tảng, tôi cũng tìm hiểu sơ bộ Amazon Bedrock. Tôi không dùng Bedrock làm dịch vụ chính trong project, nhưng phần này giúp tôi thấy AWS không chỉ có hạ tầng như server, storage hay database. AWS còn có nhiều managed services ở tầng cao hơn, phục vụ các bài toán ứng dụng hiện đại và AI.
+
+Sau giai đoạn đầu, điều tôi rút ra là học AWS không nên bắt đầu bằng việc làm thật nhiều dịch vụ cùng lúc. Trước hết cần biết cách dùng tài khoản an toàn, kiểm tra chi phí, hiểu IAM và thao tác được trên console. Những việc này nghe đơn giản nhưng nếu bỏ qua thì khi làm project lớn hơn rất dễ gặp lỗi khó kiểm soát.
+
+Với tôi, giai đoạn này giống như bước chuẩn bị nền. Sau khi đã quen console, biết kiểm tra Billing và hiểu cơ bản về IAM, tôi tự tin hơn khi chuyển sang các dịch vụ core như EC2, S3, VPC, RDS và sau đó là các dịch vụ serverless cho project Campus IT Support Ticket Portal.
 
 ## Tài liệu tham khảo
 
