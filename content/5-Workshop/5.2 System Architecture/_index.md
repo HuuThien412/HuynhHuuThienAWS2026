@@ -29,7 +29,7 @@ The system also uses **DynamoDB Streams**, a notification Lambda function, **Ama
 The following diagram presents the main components and data flows of the system.
 
 {{< project-image
-src="images/5-Workshop/5.2-System-Architecture/Architecture.png"
+src="images/5-Workshop/5.2 System Architecture/Architecture.jpg"
 alt="Campus IT Support Ticket Portal architecture diagram"
 caption="Figure 5.2.1: Overall architecture of the Campus IT Support Ticket Portal."
 >}}
