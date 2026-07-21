@@ -1,0 +1,12 @@
+<figure class="project-image">
+  <img
+    src="{{ (.Get "src") | relURL }}"
+    alt="{{ .Get "alt" }}"
+    loading="lazy"
+  >
+  {{ with .Get "caption" }}
+  <figcaption>
+    <em>{{ . }}</em>
+  </figcaption>
+  {{ end }}
+</figure>
