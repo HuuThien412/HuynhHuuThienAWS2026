@@ -1,81 +1,55 @@
 ---
-title: "5.3 AWS Services"
+title: "AWS Amplify Hosting"
 date: 2026-07-21
-weight: 3
+weight: 1
 chapter: false
-pre: "<b>5.3 </b>"
+pre: "<b>5.3.1 </b>"
 ---
 
-# AWS Services
+## Overview
 
-## 5.3.1 AWS Amplify Hosting
+AWS Amplify Hosting is used to deploy and host the frontend application of the Campus IT Support Ticket Portal.
 
-### Introduction
+It provides automatic deployment from the GitHub repository, HTTPS support, and continuous integration and continuous deployment (CI/CD). Every new commit pushed to the **main** branch automatically triggers a new deployment.
 
-AWS Amplify Hosting was selected as the frontend hosting service for the **Campus IT Support Ticket Portal**. It provides a managed environment for hosting static web applications while integrating directly with GitHub to automatically build and deploy the project whenever new source code is pushed.
-
-Using AWS Amplify eliminates the need to configure and maintain a traditional web server while providing HTTPS support, optimized content delivery, and a complete CI/CD workflow.
-
----
-
-### Role in the Project
-
-Within this project, AWS Amplify is responsible for:
-
-- Hosting the frontend application.
-- Automatically building the Hugo website after every GitHub push.
-- Deploying new versions without manual intervention.
-- Providing a secure HTTPS endpoint for users.
-- Managing deployment history.
-- Supporting future expansion through multiple deployment branches.
+The deployed frontend communicates with Amazon Cognito for authentication and Amazon API Gateway for backend API requests.
 
 ---
 
-### Deployment Workflow
+## Amplify Application
 
-The frontend deployment workflow operates as follows:
-
-1. The developer pushes new source code to GitHub.
-2. AWS Amplify detects the new commit on the **main** branch.
-3. Amplify downloads the updated repository.
-4. The project is automatically built.
-5. After a successful build, Amplify deploys the new version.
-6. The updated website becomes available to users.
-
-This automated workflow minimizes deployment errors and ensures that the latest version of the application is always available.
-
----
-
-### AWS Amplify Application
+The following figure shows the AWS Amplify application dashboard after the frontend has been successfully deployed.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/Amplify Hosting.png"
+src="images/5-Workshop/5.3-AWS Services/5.3.1 AWS Amplify Hosting/Amplify Hosting.png"
 alt="AWS Amplify Hosting"
-caption="Figure 5.3.1: Campus IT Support Ticket Portal deployed on AWS Amplify Hosting."
+caption="Figure 5.3.1: AWS Amplify Hosting dashboard."
 >}}
-
-The figure above shows the application hosted on AWS Amplify. Amplify manages the application, production branch, default domain, and GitHub repository integration.
 
 ---
 
-### Build and Deployment Process
+## Deployment Process
+
+After each source code update is pushed to GitHub, AWS Amplify automatically builds and deploys the latest version of the application.
+
+The deployment history allows developers to monitor build status, deployment duration, and rollback previous versions when necessary.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/Deployment Success.png"
+src="images/5-Workshop/5.3-AWS Services/5.3.1 AWS Amplify Hosting/Deployment Success.png"
 alt="Deployment Success"
-caption="Figure 5.3.2: Successful build and deployment process on AWS Amplify."
+caption="Figure 5.3.2: Successful deployment using AWS Amplify."
 >}}
-
-Whenever new source code is pushed, AWS Amplify automatically starts the build and deployment pipeline. The console displays the build duration, deployment duration, deployment history, and deployment status, allowing developers to monitor each release efficiently.
 
 ---
 
-### Results
+## Benefits
 
-Using AWS Amplify Hosting provides the following benefits:
+AWS Amplify Hosting provides several advantages:
 
-- The frontend is publicly accessible through HTTPS.
-- The CI/CD pipeline is fully automated.
-- The website is updated automatically after every GitHub push.
-- No web server management is required.
-- The architecture is ready for future expansion with multiple deployment environments.
+- Automatic deployment from GitHub
+- HTTPS enabled by default
+- Continuous Integration / Continuous Deployment (CI/CD)
+- Fast global content delivery
+- Simple frontend hosting without server management
+
+Amplify serves as the entry point of the system before users access Amazon Cognito for authentication and backend services through Amazon API Gateway.
