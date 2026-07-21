@@ -1,58 +1,119 @@
 ---
-title : "Amazon SES"
-date : 2026-07-21
-weight : 7
-chapter : false
-pre : " <b> 5.3.7 </b> "
+title: "Amazon SES"
+date: 2026-07-21
+weight: 7
+chapter: false
+pre: "<b>5.3.7 </b>"
 ---
 
-Amazon Simple Email Service (Amazon SES) is a cloud-based email service provided by AWS for sending transactional and notification emails. It enables applications to send emails securely without managing their own mail servers.
+# Amazon SES
 
-In the Campus IT Support Portal project, Amazon SES was configured as a supporting service for future email notification functionality. A verified sender identity was created successfully, preparing the system for integration with AWS Lambda to send automated notifications.
+## Introduction
+
+Amazon Simple Email Service (Amazon SES) is a cloud-based email service provided by AWS for sending transactional and notification emails securely and reliably.
+
+The service allows applications to send emails without maintaining a dedicated mail server. It also provides account health monitoring, sender identity verification, sending quotas, and optional delivery tracking features.
+
+In the Campus IT Support Portal project, Amazon SES was configured as a supporting service for email notification functionality. A sender email identity was successfully verified, providing the required foundation for integration with AWS Lambda.
+
+---
+
+## Role in the Project
+
+Amazon SES is intended to support the following email notification scenarios:
+
+- Sending confirmation emails when a ticket is created.
+- Sending alerts for High or Critical priority tickets.
+- Notifying users when a ticket status changes.
+- Delivering administrative notifications to the IT support team.
+- Supporting asynchronous email delivery through AWS Lambda.
+
+The current SES account is operating in the Sandbox environment. Therefore, email delivery is currently limited to verified sender and recipient identities.
 
 ---
 
 ## Amazon SES Dashboard
 
-The Amazon SES dashboard provides an overview of the account status, sending quota, service health, and sandbox environment. It confirms that the email service has been configured successfully and is ready for future integration.
+The Amazon SES account dashboard provides an overview of the service status, sending limits, account health, and current operating environment.
 
-{{< figure src="/images/5-Workshop/5.3-AWS-Services/5.3.7-Amazon-SES/ses-dashboard.png"
-    title="Figure 5.3.7.1: Amazon SES account dashboard displaying account status and sending limits." >}}
+{{< project-image
+src="images/5-Workshop/5.3-AWS-Services/5.3.7-Amazon-SES/ses-dashboard.png"
+alt="Amazon SES account dashboard"
+caption="Figure 5.3.7.1: Amazon SES account dashboard displaying account status and sending limits."
+>}}
 
-The dashboard shows the account status, daily sending quota, maximum send rate, and overall service health.
+The dashboard shows that the account is operating in the Asia Pacific (Singapore) Region and remains in the SES Sandbox environment.
+
+It also displays:
+
+- Daily sending quota.
+- Maximum email sending rate.
+- Account health status.
+- Access to reputation metrics.
+- Production access information.
+
+The configured account currently supports up to 200 emails within a 24-hour period and a maximum sending rate of one email per second.
 
 ---
 
 ## Verified Identity
 
-Before Amazon SES can send emails, the sender identity must be verified. This process ensures that only authorized email addresses or domains are allowed to send emails through the service.
+Amazon SES requires sender identities to be verified before they can be used to send emails.
 
-{{< figure src="/images/5-Workshop/5.3-AWS-Services/5.3.7-Amazon-SES/verified-identity.png"
-    title="Figure 5.3.7.2: Verified sender identity configured in Amazon SES." >}}
+An identity can be either:
 
-A Gmail account was successfully verified and configured as the sender identity. Although automatic email delivery has not yet been integrated into the application, the verified identity provides a secure foundation for future implementation.
+- An individual email address.
+- A complete email domain.
+- A subdomain.
+
+{{< project-image
+src="images/5-Workshop/5.3-AWS-Services/5.3.7-Amazon-SES/verified-identity.png"
+alt="Verified Amazon SES sender identity"
+caption="Figure 5.3.7.2: Verified sender identity configured in Amazon SES."
+>}}
+
+In this project, a Gmail address was successfully verified as an Amazon SES identity. The verified status confirms that the address is authorized for email delivery through the service.
+
+Because the account is still in Sandbox mode, emails can currently be sent only to other verified email identities. Production access would be required before sending notifications to unrestricted recipients.
 
 ---
 
 ## Configuration Sets
 
-Amazon SES supports Configuration Sets to manage email sending behavior, event publishing, and delivery monitoring. This feature allows developers to organize email sending rules and monitor email events.
+Amazon SES provides Configuration Sets to manage sending behavior, publish delivery events, and monitor email activity.
 
-{{< figure src="/images/5-Workshop/5.3-AWS-Services/5.3.7-Amazon-SES/email-configuration.png"
-    title="Figure 5.3.7.3: Amazon SES Configuration Sets for managing email delivery." >}}
+Configuration Sets can be used to track events such as:
 
-Although no Configuration Set was created during this project, the feature is available for future enhancements when email notifications are integrated into the system.
+- Email delivery.
+- Rejected messages.
+- Bounces.
+- Complaints.
+- Opens.
+- Link clicks.
+
+{{< project-image
+src="images/5-Workshop/5.3-AWS-Services/5.3.7-Amazon-SES/email-configuration.png"
+alt="Amazon SES configuration sets"
+caption="Figure 5.3.7.3: Amazon SES Configuration Sets for managing email delivery."
+>}}
+
+No Configuration Set was created during the current project implementation. The feature remains available for future improvements when advanced email tracking, analytics, or event publishing is required.
+
+The current notification implementation can still use Amazon SES without a Configuration Set for basic transactional email delivery.
 
 ---
 
-## Results
+## Email Notification Workflow
 
-Amazon SES was successfully configured as part of the Campus IT Support Portal architecture. The verified sender identity demonstrates that the email service is ready for future integration with AWS Lambda.
+The intended notification workflow operates as follows:
 
-The implementation provides the following benefits:
-
-- Secure sender identity verification.
-- Reliable cloud-based email service.
-- Preparation for automated email notifications.
-- Easy integration with AWS Lambda.
-- Scalable email delivery infrastructure.
+```text
+DynamoDB ticket change
+        ↓
+DynamoDB Streams
+        ↓
+CampusSupportNotificationService
+        ↓
+Amazon SES
+        ↓
+Verified recipient email
