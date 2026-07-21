@@ -30,7 +30,7 @@ The following diagram presents the main components and data flows of the system.
 
 {{< project-image
 src="images/5-Workshop/5.2-System-Architecture/architecture.jpg"
-alt="Campus IT Support Ticket Portal architecture diagram"
+alt="Campus IT Support Ticket Portal Architecture"
 caption="Figure 5.2.1: Overall architecture of the Campus IT Support Ticket Portal."
 >}}
 

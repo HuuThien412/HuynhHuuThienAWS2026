@@ -29,7 +29,7 @@ Hệ thống sử dụng **DynamoDB Streams**, Lambda thông báo, **Amazon SES*
 Sơ đồ sau thể hiện các thành phần chính và luồng trao đổi dữ liệu trong hệ thống.
 
 {{< project-image
-src="images/5-Workshop/5.2 System Architecture/Architecture.jpg"
+src="images/5-Workshop/5.2-System-Architecture/architecture.jpg"
 alt="Sơ đồ kiến trúc Campus IT Support Ticket Portal"
 caption="Hình 5.2.1: Kiến trúc tổng thể của Campus IT Support Ticket Portal."
 >}}
