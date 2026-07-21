@@ -1,5 +1,5 @@
 ---
-title: "5.3.2 Amazon Cognito"
+title: "Amazon Cognito"
 date: 2026-07-21
 weight: 2
 chapter: false
@@ -41,11 +41,10 @@ Trong dự án, User Pool chịu trách nhiệm:
 - Quản lý thông tin hồ sơ người dùng.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/User Pool Overview.png"
-alt="User Pool Overview"
+src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/user-pool-overview.png"
+alt="Tổng quan User Pool"
 caption="Hình 5.3.3: Tổng quan User Pool của Amazon Cognito."
 >}}
-
 Hình trên thể hiện User Pool được sử dụng để quản lý toàn bộ tài khoản của hệ thống cùng các thông tin định danh và cấu hình xác thực.
 
 ---
@@ -60,7 +59,7 @@ Hình trên thể hiện User Pool được sử dụng để quản lý toàn b
 Sau khi người dùng đăng ký thành công, Lambda Post Confirmation sẽ tự động thêm tài khoản mới vào nhóm **Users**. Đối với quản trị viên, tài khoản được thêm thủ công vào nhóm **Admins**.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/User Groups.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/user-groups.png"
 alt="User Groups"
 caption="Hình 5.3.4: Phân quyền người dùng bằng Cognito Groups."
 >}}
@@ -81,7 +80,7 @@ Frontend sử dụng App Client để:
 - Thực hiện đăng xuất.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/App Client.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/app-client.png"
 alt="App Client"
 caption="Hình 5.3.5: Cấu hình App Client của Amazon Cognito."
 >}}
@@ -97,7 +96,7 @@ Dự án sử dụng **Amazon Cognito Hosted UI** để cung cấp giao diện �
 Sau khi người dùng xác thực thành công, Cognito tự động chuyển hướng về frontend và trả về JWT Token.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/Hosted UI.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/hosted-ui.png"
 alt="Hosted UI"
 caption="Hình 5.3.6: Giao diện đăng nhập Amazon Cognito Hosted UI."
 >}}

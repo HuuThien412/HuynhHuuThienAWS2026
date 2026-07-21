@@ -1,5 +1,5 @@
 ---
-title: "5.3.2 Amazon Cognito"
+title: "Amazon Cognito"
 date: 2026-07-21
 weight: 2
 chapter: false
@@ -41,11 +41,10 @@ Within this project, the User Pool is responsible for:
 - Maintaining user profile information.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/User Pool Overview.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/user-pool-overview.png"
 alt="User Pool Overview"
 caption="Figure 5.3.3: Amazon Cognito User Pool overview."
 >}}
-
 The figure above shows the User Pool used to manage application users, identity information, and authentication settings.
 
 ---
@@ -60,7 +59,7 @@ To implement role-based authorization, the project defines two Cognito Groups:
 After a new account is confirmed, the Post Confirmation Lambda function automatically assigns the user to the **Users** group. Administrator accounts are assigned manually to the **Admins** group.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/User Groups.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/user-groups.png"
 alt="User Groups"
 caption="Figure 5.3.4: User authorization using Amazon Cognito Groups."
 >}}
@@ -81,7 +80,7 @@ It is responsible for:
 - Supporting user sign-out.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/App Client.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/app-client.png"
 alt="App Client"
 caption="Figure 5.3.5: Amazon Cognito App Client configuration."
 >}}
@@ -97,7 +96,7 @@ The project uses the **Amazon Cognito Hosted UI** to provide a secure sign-in an
 After successful authentication, Cognito automatically redirects users back to the frontend application and returns the required JWT tokens.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/Hosted UI.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.2-Amazon-Cognito/hosted-ui.png"
 alt="Hosted UI"
 caption="Figure 5.3.6: Amazon Cognito Hosted UI used for user authentication."
 >}}
