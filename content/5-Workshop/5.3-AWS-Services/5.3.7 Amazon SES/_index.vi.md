@@ -100,20 +100,3 @@ caption="Hình 5.3.7.3: Configuration Sets trong Amazon SES phục vụ quản l
 Trong phiên bản hiện tại của dự án chưa tạo Configuration Set. Tính năng này có thể được bổ sung trong tương lai khi hệ thống cần theo dõi chi tiết trạng thái gửi email, phân tích dữ liệu hoặc xuất bản các sự kiện gửi thư.
 
 Đối với chức năng gửi email giao dịch cơ bản, Amazon SES vẫn có thể hoạt động mà không cần Configuration Set.
-
----
-
-## Luồng gửi email thông báo
-
-Luồng thông báo qua email được thiết kế như sau:
-
-```text
-Ticket thay đổi trong DynamoDB
-        ↓
-DynamoDB Streams
-        ↓
-CampusSupportNotificationService
-        ↓
-Amazon SES
-        ↓
-Email người nhận đã xác minh

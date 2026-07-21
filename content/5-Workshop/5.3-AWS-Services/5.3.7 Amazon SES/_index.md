@@ -100,20 +100,3 @@ caption="Figure 5.3.7.3: Amazon SES Configuration Sets for managing email delive
 No Configuration Set was created during the current project implementation. The feature remains available for future improvements when advanced email tracking, analytics, or event publishing is required.
 
 The current notification implementation can still use Amazon SES without a Configuration Set for basic transactional email delivery.
-
----
-
-## Email Notification Workflow
-
-The intended notification workflow operates as follows:
-
-```text
-DynamoDB ticket change
-        ↓
-DynamoDB Streams
-        ↓
-CampusSupportNotificationService
-        ↓
-Amazon SES
-        ↓
-Verified recipient email
