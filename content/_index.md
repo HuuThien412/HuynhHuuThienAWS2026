@@ -21,7 +21,7 @@ description = "FCJ Cloud Journey Internship Report"
 
 &emsp; **Internship Duration:** 20/04/2026 – 12/07/2026
 
-![Your profile picture](/images/avatar.png)
+![Your profile picture](images/avatar.png)
 
 ### Report Content
 

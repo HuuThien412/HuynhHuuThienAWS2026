@@ -21,7 +21,7 @@ description = "FCJ Cloud Journey Internship Report"
 
 &emsp; **Thời gian thực tập:** 20/04/2026 – 12/07/2026
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+![Ảnh đại diện của bạn](images/avatar.png)
 
 ### Nội dung báo cáo
 
