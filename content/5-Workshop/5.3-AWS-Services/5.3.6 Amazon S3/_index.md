@@ -63,7 +63,7 @@ This design improves performance and reduces database storage usage.
 Uploaded files are organized inside the bucket using a folder prefix.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.6-Amazon-S3/folder-structure.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.6-Amazon-S3/attachment-folder.png"
 alt="S3 folder structure"
 caption="Figure 5.3.6.3: Folder structure inside the S3 bucket."
 >}}

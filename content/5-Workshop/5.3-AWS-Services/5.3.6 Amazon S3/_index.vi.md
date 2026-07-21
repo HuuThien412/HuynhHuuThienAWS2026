@@ -63,9 +63,9 @@ Thiết kế này giúp tăng hiệu năng và giảm dung lượng lưu trữ c
 Các tệp được tổ chức theo thư mục bên trong Bucket.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.6-Amazon-S3/folder-structure.png"
-alt="Folder structure"
-caption="Hình 5.3.6.3: Cấu trúc thư mục trong Amazon S3."
+src="images/5-Workshop/5.3-AWS-Services/5.3.6-Amazon-S3/attachment-folder.png"
+alt="Attachment folder"
+caption="Figure 5.3.6.3: Ticket attachment folders stored in the Amazon S3 bucket."
 >}}
 
 Việc tổ chức theo thư mục giúp dễ dàng quản lý và bảo trì dữ liệu.
