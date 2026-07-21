@@ -35,7 +35,7 @@ The dashboard serves as the entry point for monitoring AWS services and managing
 CloudWatch automatically creates Log Groups for AWS Lambda functions after they are deployed and executed. Each Log Group stores execution records for an individual Lambda function.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.8-Amazon-CloudWatch/log-groups.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.8-Amazon-CloudWatch/lambda-logs.png"
 alt="CloudWatch Log Groups"
 caption="Figure 5.3.8.2: Log Groups created for AWS Lambda functions."
 >}}

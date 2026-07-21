@@ -35,7 +35,7 @@ Dashboard đóng vai trò là điểm truy cập trung tâm giúp quản lý và
 CloudWatch tự động tạo Log Group cho mỗi AWS Lambda sau khi hàm được triển khai và thực thi. Mỗi Log Group lưu trữ toàn bộ nhật ký của một Lambda Function.
 
 {{< project-image
-src="images/5-Workshop/5.3-AWS-Services/5.3.8-Amazon-CloudWatch/log-groups.png"
+src="images/5-Workshop/5.3-AWS-Services/5.3.8-Amazon-CloudWatch/lambda-logs.png"
 alt="CloudWatch Log Groups"
 caption="Hình 5.3.8.2: Các Log Group được tạo cho các hàm AWS Lambda."
 >}}
