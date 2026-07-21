@@ -1,5 +1,5 @@
 ---
-title : "AWS Identity and Access Management (IAM)"
+title: "AWS IAM"
 date : 2026-07-21
 weight : 9
 chapter : false
