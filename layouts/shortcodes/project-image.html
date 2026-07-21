@@ -1,12 +1,16 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" -}}
+
 <figure class="project-image">
   <img
-    src="{{ (.Get "src") | relURL }}"
-    alt="{{ .Get "alt" }}"
+    src="{{ $src | relURL }}"
+    alt="{{ $alt }}"
     loading="lazy"
   >
-  {{ with .Get "caption" }}
+  {{- with $caption }}
   <figcaption>
     <em>{{ . }}</em>
   </figcaption>
-  {{ end }}
+  {{- end }}
 </figure>
