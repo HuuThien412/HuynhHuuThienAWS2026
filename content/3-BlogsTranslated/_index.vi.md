@@ -10,7 +10,7 @@ pre: " <b> 3. </b> "
 
 Phần này gồm 3 bài blog chia sẻ quá trình học AWS thông qua các tác vụ thực hành. Nội dung tập trung vào những gì tôi học được khi từng bước sử dụng AWS: từ tạo tài khoản, kiểm soát chi phí, IAM, các dịch vụ core, serverless API, monitoring và security.
 
-Link các bài blog đã đăng: [AWS Study Group Facebook](https://www.facebook.com/groups/660548818043427/user/100056448228625)
+Link các bài blog đã đăng: [AWS Study Group Facebook](https://www.facebook.com/groups/awsstudygroupfcj)
 
 ### [Blog 1 - Học AWS từ tạo tài khoản, IAM và kiểm soát chi phí](3.1-Blog1/)
 

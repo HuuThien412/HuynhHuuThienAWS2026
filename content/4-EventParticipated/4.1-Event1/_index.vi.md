@@ -6,118 +6,64 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Sự kiện 1
 
-### Mục Đích Của Sự Kiện
+## Tổng quan sự kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+| Nội dung | Thông tin |
+| --- | --- |
+| Tên sự kiện | Buổi chia sẻ phương pháp học tập, động lực học và Prompt Engineering |
+| Thời gian | Khoảng 09:00 - 10:25 |
+| Hình thức | Tham gia buổi chia sẻ trong quá trình thực tập/học tập tại FCJ |
+| Vai trò | Người tham dự |
+| Người thuyết trình | Anh Hoàng Long và anh Thinh Nguyen |
 
-### Danh Sách Diễn Giả
+Buổi chia sẻ được chia thành hai phần chính. Phần đầu do **anh Hoàng Long** trình bày, tập trung vào cách học đúng cách và duy trì động lực học tập. Phần tiếp theo do **anh Thinh Nguyen** trình bày, tập trung vào **Prompt Engineering** và cách giao tiếp hiệu quả với AI để cải thiện chất lượng đầu ra của mô hình ngôn ngữ lớn.
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+## 9:00 - 9:45 sáng | Phương pháp học đúng cách và duy trì động lực học tập
 
-### Nội Dung Nổi Bật
+**Người thuyết trình: Anh Hoàng Long**
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+- Đã trình bày về cách học đúng cách, tránh học lan man hoặc chỉ làm theo hướng dẫn mà không hiểu bản chất.
+- Giải thích tầm quan trọng của việc đặt mục tiêu học tập rõ ràng trước khi bắt đầu một nội dung mới.
+- Chia sẻ cách duy trì động lực học bằng việc chia nhỏ mục tiêu theo từng giai đoạn.
+- Nhấn mạnh việc học cần đi kèm thực hành để hiểu rõ vấn đề thay vì chỉ đọc lý thuyết.
+- Khuyến khích người học ghi chú lại lỗi gặp phải và cách xử lý trong quá trình thực hành.
+- Gợi ý nên liên hệ kiến thức đã học với một project thực tế để dễ nhớ và có động lực hơn.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+## 9:45 - 10:25 sáng | Automated Prompt Engineering: Enhancing LLM Output Quality
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+**Người thuyết trình: Anh Thinh Nguyen**
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Đã giới thiệu **Prompt Engineering** như một kỹ năng quan trọng để giao tiếp hiệu quả với AI.
+- Giải thích vì sao prompt chung chung thường tạo ra kết quả chung chung, thiếu trọng tâm và khó sử dụng.
+- Trình bày các vấn đề thường gặp khi viết prompt chưa tốt như lãng phí token, tăng chi phí, hướng dẫn mơ hồ và kết quả không nhất quán.
+- So sánh ví dụ giữa prompt đơn giản và prompt có yêu cầu rõ ràng về đối tượng, độ dài, mục tiêu, giọng văn và định dạng đầu ra.
+- Giới thiệu các thành phần của một prompt tốt gồm **Role**, **Instruction**, **Context**, **Input Data**, **Output Format**, **Examples** và **Constraints/Guidelines**.
+- Chia sẻ các nguyên tắc khi viết prompt như rõ ràng, cụ thể, dùng ngôn ngữ trực tiếp, dùng dấu phân cách, chia input dài thành các phần nhỏ và cho phép AI trả lời “I don’t know” khi không đủ thông tin.
+- Trình bày khái niệm **Token Economics**, giúp người học hiểu rằng prompt dài hoặc không tối ưu có thể làm tăng số token và chi phí sử dụng AI.
+- Giới thiệu một số kỹ thuật nâng cao như **Chain-of-Thought**, **Self-Consistency**, **Tree-of-Thoughts**, **Retrieval-Augmented Generation (RAG)** và **Role Prompting**.
+- Đã giới thiệu ý tưởng **Proptimizer**, một browser extension hỗ trợ tối ưu prompt và cho phép người dùng trò chuyện với AI trên web.
+- Trình bày kiến trúc giải pháp Proptimizer với các dịch vụ AWS như **Amazon S3**, **Amazon CloudFront**, **Amazon Cognito**, **Amazon API Gateway**, **AWS Lambda**, **Amazon Bedrock**, **Amazon DynamoDB** và **Amazon CloudWatch**.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+Tài liệu trình bày: [Canva bài thuyết trình của anh Thinh Nguyen](https://www.canva.com/design/DAHDM4mSVY0/TW7ReHV12KiH7nLZoCs4sg/edit?utm_content=DAHDM4mSVY0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-#### Domain-Driven Design (DDD)
+## Những gì học được
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+- Hiểu rằng việc học AWS cần có phương pháp rõ ràng, mục tiêu cụ thể và quá trình thực hành đều đặn.
+- Nhận ra worklog không chỉ là phần báo cáo, mà còn là công cụ giúp theo dõi tiến độ học tập.
+- Biết cách nhìn mỗi dịch vụ AWS theo mục đích sử dụng, cách hoạt động và vị trí của dịch vụ trong kiến trúc tổng thể.
+- Hiểu vai trò của Prompt Engineering trong việc sử dụng AI để học tập, viết tài liệu, phân tích lỗi và cải thiện hiệu suất làm việc.
+- Biết rằng một prompt tốt cần có ngữ cảnh, yêu cầu rõ ràng, định dạng đầu ra và các ràng buộc cụ thể.
+- Nhận ra việc tối ưu prompt cũng giúp tối ưu chi phí khi làm việc với các mô hình AI tính phí theo token.
+- Có thêm góc nhìn về cách xây dựng một ứng dụng AI trên AWS thông qua kiến trúc Proptimizer.
 
-#### Event-Driven Architecture
+## Liên hệ với quá trình thực tập
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+Nội dung sự kiện có liên quan trực tiếp đến quá trình thực tập của tôi. Khi học các dịch vụ AWS và thực hiện project **Campus IT Support Ticket Portal**, tôi cần chia nhỏ nội dung học, ghi chú lỗi, kiểm tra từng bước và liên tục liên hệ kiến thức với hệ thống thực tế.
 
-#### Compute Evolution
+Bên cạnh đó, phần Prompt Engineering của anh Thinh Nguyen giúp tôi hiểu cách sử dụng AI hiệu quả hơn trong quá trình học và viết tài liệu. Thay vì đặt câu hỏi chung chung, tôi có thể cung cấp rõ vai trò, ngữ cảnh, dữ liệu đầu vào và định dạng mong muốn để nhận được câu trả lời hữu ích hơn.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+## Kết luận
 
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+Sự kiện 1 giúp tôi điều chỉnh lại cách học và cách sử dụng AI trong quá trình học tập. Phần chia sẻ của anh Hoàng Long giúp tôi hiểu tầm quan trọng của phương pháp học và động lực học tập. Phần trình bày của anh Thinh Nguyen giúp tôi hiểu rõ hơn về Prompt Engineering, token, kỹ thuật prompt nâng cao và cách một ứng dụng AI có thể được xây dựng trên AWS.
