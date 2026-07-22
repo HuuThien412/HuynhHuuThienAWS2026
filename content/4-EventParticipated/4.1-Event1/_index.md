@@ -8,6 +8,13 @@ pre: " <b> 4.1. </b> "
 
 **Event time:** Around 09:00 - 12:00
 
+## Event Objectives
+
+- Learn practical methods for setting clear learning goals, maintaining motivation, and improving self-study during the internship.
+- Understand how Prompt Engineering can support learning, documentation, problem solving, and working more effectively with AI tools.
+- Gain a broader view of professional working environments, especially in banking technology and recruitment preparation.
+- Connect the lessons from the event with my AWS learning process, worklog writing, project documentation, and career preparation.
+
 ## 9:00 - 9:45 AM | Effective Learning Method and Learning Motivation
 
 **Speaker: Mr. Hoang Long**

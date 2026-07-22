@@ -8,6 +8,13 @@ pre: " <b> 4.1. </b> "
 
 **Thời gian sự kiện:** Khoảng 09:00 - 12:00
 
+## Mục tiêu sự kiện
+
+- Học được phương pháp đặt mục tiêu rõ ràng, duy trì động lực và cải thiện khả năng tự học trong quá trình thực tập.
+- Hiểu cách Prompt Engineering có thể hỗ trợ việc học, viết tài liệu, xử lý vấn đề và làm việc hiệu quả hơn với các công cụ AI.
+- Có thêm góc nhìn về môi trường làm việc chuyên nghiệp, đặc biệt là lĩnh vực công nghệ ngân hàng và chuẩn bị tuyển dụng.
+- Liên hệ nội dung sự kiện với quá trình học AWS, viết worklog, hoàn thiện tài liệu dự án và định hướng nghề nghiệp sau thực tập.
+
 ## 9:00 - 9:45 sáng | Phương pháp học đúng cách và duy trì động lực học tập
 
 **Người thuyết trình: Anh Hoàng Long**
