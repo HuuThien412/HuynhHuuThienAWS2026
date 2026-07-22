@@ -144,6 +144,25 @@ a:hover {
   color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
 }
 
+#sidebar ul.topics li > a {
+  position: relative;
+  padding-right: 2rem;
+}
+
+#sidebar ul.topics li > a .read-icon {
+  float: none;
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  margin-top: 0;
+  transform: translateY(-50%);
+}
+
+#sidebar ul.topics > li.active > a .read-icon,
+#sidebar ul.topics > li.parent > a .read-icon {
+  right: 0.8rem;
+}
+
 #sidebar hr {
   border-color: var(--MENU-SECTION-HR-color);
 }
