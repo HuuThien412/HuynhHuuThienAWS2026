@@ -10,6 +10,8 @@ pre: " <b> 5. </b> "
 
 Workshop này ghi lại quá trình triển khai **Campus IT Support Ticket Portal**, một hệ thống web helpdesk serverless dùng để tiếp nhận và quản lý yêu cầu hỗ trợ kỹ thuật trong môi trường trường học.
 
+**Website đã triển khai:** [https://main.d37atxjbyyp60m.amplifyapp.com/](https://main.d37atxjbyyp60m.amplifyapp.com/)
+
 Hệ thống sau khi triển khai cho phép người dùng đăng ký, đăng nhập, gửi ticket hỗ trợ, upload file đính kèm, theo dõi lịch sử ticket và nhận cập nhật trạng thái. Quản trị viên có thể xem toàn bộ ticket, tìm kiếm và lọc yêu cầu, cập nhật trạng thái, thêm ghi chú xử lý, xóa ticket và nhận cảnh báo khi có ticket ưu tiên cao.
 
 Frontend được triển khai công khai bằng **AWS Amplify Hosting** và được kết nối với GitHub để tự động build/deploy khi có thay đổi mã nguồn.

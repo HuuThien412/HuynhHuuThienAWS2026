@@ -10,6 +10,8 @@ pre: " <b> 5. </b> "
 
 This workshop documents the implementation process of **Campus IT Support Ticket Portal**, a serverless helpdesk web system for receiving and managing IT support requests in a campus environment.
 
+**Deployed website:** [https://main.d37atxjbyyp60m.amplifyapp.com/](https://main.d37atxjbyyp60m.amplifyapp.com/)
+
 The completed system allows users to register, sign in, submit support tickets, upload attachments, track ticket history, and receive status updates. Administrators can view all tickets, search and filter requests, update ticket status, add processing notes, delete tickets, and receive alerts for high-priority issues.
 
 The frontend is deployed publicly through **AWS Amplify Hosting** and is integrated with GitHub for automatic build and deployment.
