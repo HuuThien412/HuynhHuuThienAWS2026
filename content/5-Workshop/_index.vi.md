@@ -16,7 +16,11 @@ Hệ thống sau khi triển khai cho phép người dùng đăng nhập, gửi 
 
 #### Kiến trúc
 
-![Kiến trúc Campus IT Support Ticket Portal](/images/5-Workshop/ticket-portal-architecture.png)
+{{< project-image
+src="images/5-Workshop/5.2-System-Architecture/Architecture.jpg"
+alt="Kiến trúc Campus IT Support Ticket Portal"
+caption="Kiến trúc Campus IT Support Ticket Portal"
+>}}
 
 #### Các dịch vụ AWS sử dụng
 

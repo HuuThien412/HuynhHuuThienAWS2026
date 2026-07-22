@@ -16,7 +16,11 @@ The completed system allows users to sign in, submit support tickets, upload att
 
 #### Architecture
 
-![Campus IT Support Ticket Portal Architecture](/images/5-Workshop/ticket-portal-architecture.png)
+{{< project-image
+src="images/5-Workshop/5.2-System-Architecture/Architecture.jpg"
+alt="Campus IT Support Ticket Portal Architecture"
+caption="Campus IT Support Ticket Portal Architecture"
+>}}
 
 #### AWS services used
 
