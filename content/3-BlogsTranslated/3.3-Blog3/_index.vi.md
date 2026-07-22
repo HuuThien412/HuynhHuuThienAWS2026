@@ -32,6 +32,8 @@ Một việc nhỏ nhưng quan trọng ở cuối quá trình học là cleanup 
 
 Sau khi nối được các phần này lại với nhau, tôi hiểu hơn cách một ứng dụng cloud hoạt động end-to-end. Đây cũng là phần giúp tôi viết workshop rõ hơn, vì mỗi bước triển khai đều có lý do cụ thể chứ không chỉ là làm theo hướng dẫn: deploy frontend, cấu hình đăng nhập, tạo API, viết backend, lưu dữ liệu, kiểm thử user/admin, xem log và cleanup tài nguyên.
 
+Link bài blog đã đăng: [AWS Study Group Facebook](https://www.facebook.com/groups/660548818043427/user/100056448228625)
+
 ## Tài liệu tham khảo
 
 - [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)

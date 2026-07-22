@@ -30,6 +30,8 @@ Sau khi thực hành các dịch vụ core, tôi có cái nhìn rõ hơn về t�
 
 Giai đoạn này tạo nền tốt để tôi chuyển sang serverless. Khi đã hiểu compute truyền thống, storage, network và database, tôi dễ hình dung hơn vì sao các dịch vụ như API Gateway, Lambda, Cognito, DynamoDB, S3 và CloudWatch có thể kết hợp thành một ứng dụng hoàn chỉnh.
 
+Link bài blog đã đăng: [AWS Study Group Facebook](https://www.facebook.com/groups/660548818043427/user/100056448228625)
+
 ## Tài liệu tham khảo
 
 - [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)

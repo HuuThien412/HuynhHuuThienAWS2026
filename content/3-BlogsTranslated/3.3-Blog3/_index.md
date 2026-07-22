@@ -32,6 +32,8 @@ The main lesson I took from this stage is that serverless does not mean the syst
 
 After connecting these parts together, I understood more clearly how a cloud application works end to end. This also helped me write the workshop more clearly, because each deployment step had a reason behind it: deploy the frontend, configure authentication, create APIs, write backend logic, store data, test user/admin flows, read logs, and clean up resources.
 
+Published blog post link: [AWS Study Group Facebook](https://www.facebook.com/groups/660548818043427/user/100056448228625)
+
 ## References
 
 - [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)

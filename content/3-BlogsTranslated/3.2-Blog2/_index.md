@@ -30,6 +30,8 @@ After practicing these core services, I had a clearer view of the layers in a cl
 
 This stage gave me a stronger foundation for learning serverless. Once I understood traditional compute, storage, networking, and databases, it became easier to imagine how API Gateway, Lambda, Cognito, DynamoDB, S3, and CloudWatch could work together as a complete application.
 
+Published blog post link: [AWS Study Group Facebook](https://www.facebook.com/groups/660548818043427/user/100056448228625)
+
 ## References
 
 - [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)

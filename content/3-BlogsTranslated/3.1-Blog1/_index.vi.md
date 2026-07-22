@@ -28,6 +28,8 @@ Sau giai đoạn đầu, điều tôi rút ra là học AWS không nên bắt đ
 
 Với tôi, giai đoạn này giống như bước chuẩn bị nền. Sau khi đã quen console, biết kiểm tra Billing và hiểu cơ bản về IAM, tôi tự tin hơn khi chuyển sang các dịch vụ core như EC2, S3, VPC, RDS và sau đó là các dịch vụ serverless cho project Campus IT Support Ticket Portal.
 
+Link bài blog đã đăng: [AWS Study Group Facebook](https://www.facebook.com/groups/660548818043427/user/100056448228625)
+
 ## Tài liệu tham khảo
 
 - [Getting started with AWS](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/getting-started-with-aws.html)

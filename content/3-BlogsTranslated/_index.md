@@ -10,6 +10,8 @@ pre: " <b> 3. </b> "
 
 This section contains three blog posts about my AWS learning process through practical tasks. The posts focus on what I learned while using AWS services step by step, from account setup and cost control to core services, serverless APIs, monitoring, and security.
 
+Published blog posts link: [AWS Study Group Facebook](https://www.facebook.com/groups/660548818043427/user/100056448228625)
+
 ### [Blog 1 - Learning AWS from Account Setup, IAM, and Cost Control](3.1-Blog1/)
 
 This blog shares how I started learning AWS by preparing an account, exploring the AWS Console, configuring billing awareness, and understanding IAM permissions.
