@@ -112,14 +112,6 @@ alt="Các route API Gateway đã triển khai"
 caption="Hình 2.2: Các route API Gateway dùng cho chức năng quản lý ticket."
 >}}
 
-| Method | Route | Chức năng |
-| --- | --- | --- |
-| `POST` | `/tickets` | Tạo ticket mới |
-| `GET` | `/tickets` | Lấy danh sách ticket |
-| `GET` | `/tickets/{ticketId}` | Tra cứu một ticket |
-| `PATCH` | `/tickets/{ticketId}` | Cập nhật trạng thái và ghi chú |
-| `DELETE` | `/tickets/{ticketId}` | Xóa ticket |
-
 Các route đều được bảo vệ bằng JWT. Các thao tác quản trị được Lambda kiểm tra thêm Cognito Group trước khi xử lý.
 
 ---
@@ -133,21 +125,6 @@ src="images/5-Workshop/5.3-AWS-Services/5.3.5-Amazon-DynamoDB/ticket-table-overv
 alt="Bảng DynamoDB CampusSupportTickets"
 caption="Hình 2.3: Tổng quan bảng DynamoDB lưu dữ liệu ticket."
 >}}
-
-| Thuộc tính | Mô tả |
-| --- | --- |
-| `ticketId` | Mã ticket duy nhất |
-| `userId` | Định danh người dùng từ Cognito |
-| `fullName` | Họ tên người gửi |
-| `email` | Email người gửi |
-| `category` | Nhóm sự cố như WiFi, tài khoản, phần mềm hoặc thiết bị |
-| `priority` | Mức độ ưu tiên của ticket |
-| `description` | Mô tả chi tiết sự cố |
-| `status` | Trạng thái xử lý ticket |
-| `adminNote` | Ghi chú xử lý của quản trị viên |
-| `attachmentKey` | Object key của file đính kèm trên S3 |
-| `createdAt` | Thời điểm tạo ticket |
-| `updatedAt` | Thời điểm cập nhật gần nhất |
 
 #### Bảng CampusSupportConnections
 

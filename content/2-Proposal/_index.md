@@ -112,14 +112,6 @@ alt="Implemented API Gateway routes"
 caption="Figure 2.2: API Gateway routes used for ticket-management functions."
 >}}
 
-| Method | Route | Function |
-| --- | --- | --- |
-| `POST` | `/tickets` | Create a new ticket |
-| `GET` | `/tickets` | Get ticket list |
-| `GET` | `/tickets/{ticketId}` | Look up one ticket |
-| `PATCH` | `/tickets/{ticketId}` | Update status and notes |
-| `DELETE` | `/tickets/{ticketId}` | Delete a ticket |
-
 All routes are protected by JWT. Administrative actions are additionally checked by Lambda using Cognito Group information.
 
 ---
@@ -133,21 +125,6 @@ src="images/5-Workshop/5.3-AWS-Services/5.3.5-Amazon-DynamoDB/ticket-table-overv
 alt="DynamoDB CampusSupportTickets table"
 caption="Figure 2.3: Overview of the DynamoDB table used to store ticket data."
 >}}
-
-| Attribute | Description |
-| --- | --- |
-| `ticketId` | Unique ticket ID |
-| `userId` | Cognito user identifier |
-| `fullName` | Requester name |
-| `email` | Requester email |
-| `category` | Issue category such as WiFi, account, software, or device |
-| `priority` | Ticket priority |
-| `description` | Detailed issue description |
-| `status` | Ticket processing status |
-| `adminNote` | Processing note from the administrator |
-| `attachmentKey` | S3 object key of the attachment |
-| `createdAt` | Ticket creation time |
-| `updatedAt` | Last update time |
 
 #### CampusSupportConnections Table
 
