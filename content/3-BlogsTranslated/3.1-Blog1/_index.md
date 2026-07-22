@@ -28,7 +28,7 @@ After this first stage, my main takeaway was that learning AWS should not start 
 
 For me, this stage became the foundation of the rest of the internship. After becoming more comfortable with the console, Billing, and IAM, I was more confident moving into core services such as EC2, S3, VPC, RDS, and later serverless services for the Campus IT Support Ticket Portal project.
 
-Published blog post link: [AWS Study Group Facebook](https://www.facebook.com/groups/660548818043427/user/100056448228625)
+Published blog post link: [AWS Study Group Facebook](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2219698898795070/)
 
 ## References
 

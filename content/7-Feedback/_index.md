@@ -6,62 +6,51 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-### Sharing
+# Sharing and Feedback
 
-During the internship and AWS learning journey, I had the opportunity to study and practice several important cloud services through the FCJ Cloud Journey and AWS Study Group materials. The most valuable part of this process was learning how different AWS services can work together to build a complete application rather than studying each service separately.
+## Learning and Implementation Experience
 
-For my project, I built and documented the **Campus IT Support Ticket Portal**, a serverless helpdesk system for receiving and managing IT support requests in a campus environment. Through this project, I practiced using AWS Amplify Hosting, Amazon Cognito, Amazon API Gateway, AWS Lambda, Amazon DynamoDB, Amazon S3, IAM, and Amazon CloudWatch.
+During the internship, I started by learning AWS Cloud fundamentals and core services, then gradually moved to more advanced topics such as networking, security, databases, serverless computing, CI/CD, monitoring, and cost control. Writing weekly worklogs helped me review what I had learned, identify difficulties, and complete missing parts before finalizing the report.
 
-The project helped me understand the full flow of a cloud application:
+My main project was **Campus IT Support Ticket Portal**, a web-based system for receiving and managing IT support requests in a campus environment. The system includes two main workflows: users can submit tickets, track their status, and upload attachments; administrators can view ticket lists, filter requests, update status, add resolution notes, and delete tickets when needed.
 
-- Hosting a frontend website with AWS Amplify.
-- Authenticating users and admins with Amazon Cognito.
-- Protecting APIs with JWT Authorizer in API Gateway.
-- Processing backend logic with AWS Lambda.
-- Storing ticket data in DynamoDB.
-- Storing uploaded attachments in Amazon S3.
-- Checking logs and errors with Amazon CloudWatch.
-- Controlling access between services using IAM roles.
+The most important point of this project is that it was built with a serverless architecture on AWS. The frontend is deployed with **AWS Amplify Hosting**, authentication is handled by **Amazon Cognito**, APIs are managed by **Amazon API Gateway**, backend logic runs on **AWS Lambda**, ticket data is stored in **Amazon DynamoDB**, attachments are stored in **Amazon S3**, notifications use **Amazon SES**, logs are monitored through **Amazon CloudWatch**, and permissions are controlled by **AWS IAM**.
 
-Besides technical knowledge, I also improved my documentation skill. Writing the proposal, worklog, blog posts, and workshop helped me organize the project more clearly and explain technical decisions in a structured way.
+Through this project, I understood that a complete cloud application is not only about creating individual services. The more important part is designing the connection flow between services, applying suitable permissions, testing each function carefully, and documenting the implementation clearly enough for others to understand.
 
-### Difficulties
+## Knowledge Gained
 
-Some difficulties I encountered during the project included:
+- I understood how a frontend can be hosted and automatically deployed through AWS Amplify Hosting.
+- I learned how Amazon Cognito supports sign-up, sign-in, JWT tokens, and authorization through `Users`/`Admins` groups.
+- I understood the role of API Gateway in receiving requests, validating JWT tokens, and forwarding requests to Lambda.
+- I practiced implementing ticket operations with Lambda, including create, read, update, and delete functions.
+- I learned how to store NoSQL data in DynamoDB and manage attachments with S3.
+- I became familiar with email notifications using Amazon SES and real-time update flows using DynamoDB Streams/WebSocket.
+- I learned to use CloudWatch Logs to inspect errors and monitor backend activity.
+- I became more aware of IAM least privilege and cost monitoring through Billing Dashboard.
 
-- Understanding how Cognito JWT tokens are passed from the frontend to API Gateway.
-- Separating normal user permissions and admin permissions correctly.
-- Designing DynamoDB data fields to support both user and admin workflows.
-- Handling file attachment storage with S3.
-- Debugging backend errors through CloudWatch Logs.
-- Testing Route 53 custom domain registration, which could not be completed because of registrar/account validation issues.
+## Difficulties
 
-These issues helped me realize that building a cloud system is not only about creating resources, but also about connecting services correctly, controlling permissions carefully, and testing each flow step by step.
+During implementation, I faced several difficulties when connecting services together. For example, the Cognito and JWT Authorizer flow was easy to misunderstand at first because the frontend, API Gateway, and Lambda all needed to handle the token and user permissions correctly. Separating normal user permissions from admin permissions also required careful testing to prevent users from accessing administrative functions.
 
-### Feedback
+Another challenge was backend debugging. When a frontend request did not work as expected, I had to check multiple layers such as API Gateway configuration, Lambda logs, DynamoDB data, IAM permissions, and CORS settings. After becoming more familiar with CloudWatch Logs, I could identify issues faster and test the system step by step.
 
-The FCJ Cloud Journey and AWS Study Group materials are useful for students who want to learn AWS through hands-on practice. The workshop format makes it easier to follow because each section has a clear goal, implementation steps, validation, and cleanup.
+Documentation also took considerable time because the Worklog, Proposal, Blogs Posted, Workshop, Self-Assessment, and Sharing and Feedback sections needed to be consistent with one another. When the architecture or project content changed, related documentation sections also had to be updated to avoid inconsistency.
 
-From my experience, the learning process would be even more effective if learners:
+## Feedback and Suggestions
 
-- Prepare screenshots immediately after each implementation step.
-- Record errors and solutions during deployment.
-- Document IAM permissions clearly.
-- Keep architecture diagrams updated when the project changes.
-- Add cleanup steps to avoid unnecessary AWS costs.
+From my experience, the workshop-based learning format is suitable for students because it combines theory with hands-on practice. However, to learn more effectively, learners should record errors while implementing, capture screenshots after important steps, and update the architecture diagram whenever the project changes.
 
-### Suggestions
+I also realized that cleanup and Billing Dashboard monitoring should be prepared carefully. New AWS learners may focus on creating resources and forget to check whether resources are still running after practice. Cost monitoring should become a habit from the beginning.
 
-For future learners, I suggest starting with a small but realistic project. A project like a ticket portal is suitable because it includes common cloud application components: frontend hosting, authentication, APIs, backend processing, database storage, file storage, monitoring, and security.
+If I continue developing this project, I would improve the following parts:
 
-For future improvement, this project can be extended with:
+- Build a dashboard for ticket statistics by status, priority, and category.
+- Improve the admin interface so filtering and handling tickets become clearer.
+- Add audit logs for administrator actions.
+- Complete custom domain configuration if the account and domain verification process allow it.
+- Refine IAM policies so service-to-service permissions are more strictly controlled.
 
-- Email notifications when a ticket is created or updated.
-- Dashboard charts for ticket status and priority.
-- Better attachment preview in the admin console.
-- A completed custom domain configuration with Route 53.
-- More detailed audit logging for admin actions.
+## Conclusion
 
-### Conclusion
-
-Overall, this internship report and project helped me connect AWS theory with real implementation. I gained a clearer understanding of serverless architecture, authentication, API design, data storage, monitoring, and documentation. The experience also showed me the importance of careful planning, step-by-step testing, and clear technical writing when building cloud projects.
+Overall, the internship gave me a more practical view of how to build a serverless application on AWS. I not only learned how to use individual AWS services, but also understood system flow design, access control, error monitoring, cost management, and technical documentation. This experience gave me a stronger foundation to continue learning cloud computing and building AWS projects in the future.

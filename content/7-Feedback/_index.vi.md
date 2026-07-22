@@ -1,67 +1,56 @@
 ---
-title: "Chia sẻ và đóng góp ý kiến"
+title: "Chia sẻ và phản hồi"
 date: 2024-01-01
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-### Chia sẻ
+# Chia sẻ và phản hồi
 
-Trong quá trình thực tập và học AWS, tôi có cơ hội tìm hiểu và thực hành nhiều dịch vụ cloud quan trọng thông qua tài liệu FCJ Cloud Journey và AWS Study Group. Điều giá trị nhất trong quá trình này là tôi không chỉ học từng dịch vụ riêng lẻ, mà còn hiểu cách các dịch vụ AWS phối hợp với nhau để tạo thành một ứng dụng hoàn chỉnh.
+## Chia sẻ quá trình thực hiện
 
-Với project cá nhân/nhóm, tôi thực hiện và tài liệu hóa **Campus IT Support Ticket Portal**, một hệ thống helpdesk serverless dùng để tiếp nhận và quản lý yêu cầu hỗ trợ IT trong môi trường trường học. Thông qua project này, tôi đã thực hành với AWS Amplify Hosting, Amazon Cognito, Amazon API Gateway, AWS Lambda, Amazon DynamoDB, Amazon S3, IAM và Amazon CloudWatch.
+Trong quá trình thực tập, tôi bắt đầu từ việc làm quen với AWS Cloud và các dịch vụ nền tảng, sau đó từng bước thực hành các chủ đề nâng cao hơn như mạng, bảo mật, cơ sở dữ liệu, serverless, CI/CD, giám sát và kiểm soát chi phí. Việc ghi worklog theo từng tuần giúp tôi nhìn lại rõ hơn mình đã học gì, gặp khó khăn ở đâu và cần bổ sung phần nào trước khi hoàn thiện báo cáo.
 
-Project giúp tôi hiểu rõ hơn luồng hoạt động của một ứng dụng cloud:
+Project chính của tôi là **Campus IT Support Ticket Portal**, một hệ thống web hỗ trợ tiếp nhận và xử lý yêu cầu hỗ trợ kỹ thuật trong môi trường trường học. Hệ thống có hai luồng chính: người dùng gửi ticket, theo dõi trạng thái và upload file đính kèm; quản trị viên xem danh sách ticket, lọc yêu cầu, cập nhật trạng thái, thêm ghi chú xử lý và xóa ticket khi cần.
 
-- Host frontend bằng AWS Amplify.
-- Xác thực user/admin bằng Amazon Cognito.
-- Bảo vệ API bằng JWT Authorizer trong API Gateway.
-- Xử lý backend logic bằng AWS Lambda.
-- Lưu dữ liệu ticket trong DynamoDB.
-- Lưu file đính kèm trong Amazon S3.
-- Kiểm tra log và lỗi bằng Amazon CloudWatch.
-- Quản lý quyền truy cập giữa các dịch vụ bằng IAM role.
+Điểm đáng chú ý nhất của project là hệ thống được xây dựng theo kiến trúc serverless trên AWS. Frontend được triển khai bằng **AWS Amplify Hosting**, xác thực sử dụng **Amazon Cognito**, API được quản lý bằng **Amazon API Gateway**, backend xử lý bằng **AWS Lambda**, dữ liệu lưu trong **Amazon DynamoDB**, file đính kèm lưu ở **Amazon S3**, thông báo sử dụng **Amazon SES**, log theo dõi bằng **Amazon CloudWatch** và quyền truy cập được kiểm soát bằng **AWS IAM**.
 
-Bên cạnh kiến thức kỹ thuật, tôi cũng cải thiện kỹ năng viết tài liệu. Việc viết proposal, worklog, blog và workshop giúp tôi biết cách tổ chức nội dung dự án rõ ràng hơn và trình bày quyết định kỹ thuật có cấu trúc hơn.
+Thông qua project này, tôi hiểu rõ hơn rằng một ứng dụng cloud hoàn chỉnh không chỉ nằm ở việc tạo từng dịch vụ riêng lẻ. Điều quan trọng là phải thiết kế đúng luồng kết nối giữa các dịch vụ, phân quyền hợp lý, kiểm thử từng chức năng và ghi lại tài liệu đủ rõ để người khác có thể hiểu quá trình triển khai.
 
-### Khó khăn gặp phải
+## Những nội dung học được
 
-Một số khó khăn tôi gặp trong quá trình thực hiện project:
+- Hiểu cách frontend được host và tự động deploy thông qua AWS Amplify Hosting.
+- Biết cách dùng Amazon Cognito để đăng ký, đăng nhập, tạo JWT token và phân quyền theo group `Users`/`Admins`.
+- Hiểu vai trò của API Gateway trong việc nhận request, xác thực JWT và chuyển tiếp đến Lambda.
+- Thực hành viết luồng xử lý ticket bằng Lambda theo các chức năng tạo, xem, cập nhật và xóa ticket.
+- Biết cách lưu dữ liệu dạng NoSQL bằng DynamoDB và quản lý file đính kèm bằng S3.
+- Làm quen với email notification bằng Amazon SES và luồng cập nhật realtime thông qua DynamoDB Streams/WebSocket.
+- Biết dùng CloudWatch Logs để kiểm tra lỗi và theo dõi hoạt động của backend.
+- Có ý thức hơn về IAM least privilege và kiểm soát chi phí bằng Billing Dashboard.
 
-- Hiểu đúng cách Cognito JWT token được truyền từ frontend đến API Gateway.
-- Phân quyền rõ ràng giữa user thường và admin.
-- Thiết kế dữ liệu DynamoDB để hỗ trợ cả luồng user và luồng admin.
-- Xử lý lưu trữ file đính kèm bằng S3.
-- Debug lỗi backend thông qua CloudWatch Logs.
-- Thử nghiệm đăng ký custom domain bằng Route 53 nhưng chưa hoàn tất do lỗi registrar/account validation.
+## Khó khăn gặp phải
 
-Những khó khăn này giúp tôi nhận ra rằng xây dựng một hệ thống cloud không chỉ là tạo tài nguyên, mà còn cần kết nối dịch vụ đúng cách, kiểm soát quyền cẩn thận và kiểm thử từng luồng theo từng bước.
+Trong quá trình thực hiện, tôi gặp một số khó khăn khi kết nối các dịch vụ với nhau. Ví dụ, luồng xác thực bằng Cognito và JWT Authorizer ban đầu khá dễ nhầm vì frontend, API Gateway và Lambda đều cần xử lý đúng token và quyền của người dùng. Phần phân quyền giữa user thường và admin cũng cần kiểm tra kỹ để tránh trường hợp user có thể truy cập chức năng quản trị.
 
-### Đóng góp ý kiến
+Một khó khăn khác là việc debug lỗi backend. Khi request từ frontend không hoạt động đúng, tôi cần kiểm tra nhiều lớp khác nhau như cấu hình API Gateway, log Lambda, dữ liệu DynamoDB, quyền IAM hoặc cấu hình CORS. Sau khi quen dần với CloudWatch Logs, tôi có thể xác định lỗi nhanh hơn và biết cách kiểm thử từng bước.
 
-Tài liệu FCJ Cloud Journey và AWS Study Group rất hữu ích cho sinh viên muốn học AWS theo hướng thực hành. Cách trình bày dạng workshop giúp người học dễ theo dõi vì mỗi phần có mục tiêu, bước triển khai, kiểm thử và cleanup rõ ràng.
+Ngoài ra, phần tài liệu cũng mất nhiều thời gian vì phải đảm bảo Worklog, Proposal, Blogs Posted, Workshop, Self-Assessment và Sharing and Feedback thống nhất với nhau. Khi kiến trúc hoặc nội dung project thay đổi, các phần tài liệu liên quan cũng cần được cập nhật lại để tránh mâu thuẫn.
 
-Theo trải nghiệm của tôi, quá trình học sẽ hiệu quả hơn nếu người học:
+## Phản hồi và đề xuất
 
-- Chụp màn hình ngay sau mỗi bước triển khai.
-- Ghi lại lỗi và cách xử lý trong quá trình deploy.
-- Tài liệu hóa IAM permissions rõ ràng.
-- Cập nhật sơ đồ kiến trúc khi project thay đổi.
-- Thêm bước cleanup để tránh phát sinh chi phí AWS không cần thiết.
+Theo trải nghiệm của tôi, hình thức học theo workshop rất phù hợp với sinh viên vì vừa có lý thuyết vừa có thao tác thực hành. Tuy nhiên, để việc học hiệu quả hơn, người học nên ghi chú lại lỗi gặp phải ngay trong lúc thực hiện, chụp màn hình sau mỗi bước quan trọng và cập nhật sơ đồ kiến trúc khi project thay đổi.
 
-### Đề xuất cải thiện
+Tôi cũng nhận thấy cần chuẩn bị kỹ phần cleanup và theo dõi Billing Dashboard. Với người mới học AWS, đôi khi chỉ tập trung vào việc tạo tài nguyên mà quên kiểm tra tài nguyên còn chạy sau khi thực hành. Việc theo dõi chi phí nên được đưa vào thói quen từ đầu.
 
-Với người học sau này, tôi đề xuất nên bắt đầu bằng một project nhỏ nhưng có tính thực tế. Một project như ticket portal khá phù hợp vì bao gồm các thành phần phổ biến của ứng dụng cloud: frontend hosting, authentication, API, backend processing, database, file storage, monitoring và security.
+Nếu tiếp tục phát triển project, tôi muốn cải thiện thêm các phần sau:
 
-Trong tương lai, project này có thể mở rộng thêm:
+- Hoàn thiện dashboard thống kê ticket theo trạng thái, mức độ ưu tiên và nhóm sự cố.
+- Cải thiện giao diện quản trị để việc lọc và xử lý ticket rõ ràng hơn.
+- Bổ sung audit log cho các thao tác của admin.
+- Hoàn thiện custom domain nếu tài khoản và quá trình xác thực domain cho phép.
+- Tối ưu lại IAM policy để quyền truy cập giữa các dịch vụ chặt chẽ hơn.
 
-- Gửi email thông báo khi ticket được tạo hoặc cập nhật.
-- Dashboard thống kê ticket theo trạng thái và mức độ ưu tiên.
-- Chức năng preview file đính kèm trong admin console.
-- Hoàn tất cấu hình custom domain bằng Route 53.
-- Audit log chi tiết hơn cho thao tác của admin.
+## Kết luận
 
-### Kết luận
-
-Nhìn chung, báo cáo thực tập và project này giúp tôi kết nối kiến thức AWS lý thuyết với triển khai thực tế. Tôi hiểu rõ hơn về serverless architecture, authentication, API design, data storage, monitoring và documentation. Quá trình thực hiện cũng cho tôi thấy tầm quan trọng của việc lập kế hoạch, kiểm thử từng bước và viết tài liệu kỹ thuật rõ ràng khi xây dựng cloud project.
+Nhìn chung, quá trình thực tập giúp tôi có cái nhìn thực tế hơn về cách xây dựng một ứng dụng serverless trên AWS. Tôi không chỉ học được cách sử dụng từng dịch vụ, mà còn hiểu được cách thiết kế luồng hệ thống, kiểm soát quyền, theo dõi lỗi, quản lý chi phí và trình bày tài liệu kỹ thuật. Đây là nền tảng quan trọng để tôi tiếp tục học sâu hơn về cloud computing và phát triển các project AWS sau này.
