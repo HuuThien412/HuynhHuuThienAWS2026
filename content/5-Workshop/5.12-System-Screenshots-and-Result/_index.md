@@ -31,15 +31,21 @@ caption="Figure 5.12.3: Ticket submission, personal ticket history, and ticket l
 >}}
 
 {{< project-image
+src="images/5-Workshop/5.12-System-Screenshots-and-Result/attachment-upload-tab.png"
+alt="Attachment upload tab"
+caption="Figure 5.12.4: Attachment upload tab in the user ticket form."
+>}}
+
+{{< project-image
 src="images/5-Workshop/5.12-System-Screenshots-and-Result/admin-dashboard.png"
 alt="Admin dashboard"
-caption="Figure 5.12.4: Administrator dashboard and ticket list."
+caption="Figure 5.12.5: Administrator dashboard and ticket list."
 >}}
 
 {{< project-image
 src="images/5-Workshop/5.12-System-Screenshots-and-Result/admin-ticket-detail.png"
 alt="Admin ticket detail"
-caption="Figure 5.12.5: Ticket detail, status update, and administrator note section."
+caption="Figure 5.12.6: Ticket detail, status update, and administrator note section."
 >}}
 
 #### Result

@@ -31,15 +31,21 @@ caption="Hình 5.12.3: Form gửi ticket, lịch sử cá nhân và khu vực tr
 >}}
 
 {{< project-image
+src="images/5-Workshop/5.12-System-Screenshots-and-Result/attachment-upload-tab.png"
+alt="Attachment upload tab"
+caption="Hình 5.12.4: Tab đính kèm tệp trong form gửi ticket của người dùng."
+>}}
+
+{{< project-image
 src="images/5-Workshop/5.12-System-Screenshots-and-Result/admin-dashboard.png"
 alt="Admin dashboard"
-caption="Hình 5.12.4: Dashboard quản trị viên và danh sách ticket."
+caption="Hình 5.12.5: Dashboard quản trị viên và danh sách ticket."
 >}}
 
 {{< project-image
 src="images/5-Workshop/5.12-System-Screenshots-and-Result/admin-ticket-detail.png"
 alt="Admin ticket detail"
-caption="Hình 5.12.5: Chi tiết ticket, cập nhật trạng thái và ghi chú xử lý của quản trị viên."
+caption="Hình 5.12.6: Chi tiết ticket, cập nhật trạng thái và ghi chú xử lý của quản trị viên."
 >}}
 
 #### Kết quả
