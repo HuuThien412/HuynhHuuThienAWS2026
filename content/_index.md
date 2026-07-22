@@ -11,15 +11,15 @@ description = "FCJ Cloud Journey Internship Report"
 
 &emsp; **University:** Ho Chi Minh City University of Technology and Education
 
-&emsp; **Major:** Công nghệ thông tin
+&emsp; **Major:** Information Technology
 
 &emsp; **Class:** 22DTHE3
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
-&emsp; **Internship Position:** Thực tập sinh mảng Điện toán đám mây tại FCJ
+&emsp; **Internship Position:** Cloud Computing Intern at FCJ
 
-&emsp; **Internship Duration:** 20/04/2026 – 12/07/2026
+&emsp; **Internship Duration:** April 20, 2026 - July 12, 2026
 
 ![Your profile picture](images/avatar.png)
 
