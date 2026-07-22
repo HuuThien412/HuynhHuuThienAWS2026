@@ -26,7 +26,7 @@ During my internship, I participated in two events. Each one was a memorable exp
 ### [Event 1](4.1-Event1/)  
 &emsp;**Event Name:** Learning Method, Motivation, and Prompt Engineering Sharing Session  
 
-&emsp;**Date & Time:** Around 09:00 - 10:25  
+&emsp;**Date & Time:** Around 09:00 - 12:00  
 
 &emsp;**Speakers:** Mr. Hoang Long and Mr. Thinh Nguyen  
 

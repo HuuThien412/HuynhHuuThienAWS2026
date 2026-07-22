@@ -8,17 +8,7 @@ pre: " <b> 4.1. </b> "
 
 # Sự kiện 1
 
-## Tổng quan sự kiện
-
-| Nội dung | Thông tin |
-| --- | --- |
-| Tên sự kiện | Buổi chia sẻ phương pháp học tập, động lực học và Prompt Engineering |
-| Thời gian | Khoảng 09:00 - 10:25 |
-| Hình thức | Tham gia buổi chia sẻ trong quá trình thực tập/học tập tại FCJ |
-| Vai trò | Người tham dự |
-| Người thuyết trình | Anh Hoàng Long và anh Thinh Nguyen |
-
-Buổi chia sẻ được chia thành hai phần chính. Phần đầu do **anh Hoàng Long** trình bày, tập trung vào cách học đúng cách và duy trì động lực học tập. Phần tiếp theo do **anh Thinh Nguyen** trình bày, tập trung vào **Prompt Engineering** và cách giao tiếp hiệu quả với AI để cải thiện chất lượng đầu ra của mô hình ngôn ngữ lớn.
+**Thời gian sự kiện:** Khoảng 09:00 - 12:00
 
 ## 9:00 - 9:45 sáng | Phương pháp học đúng cách và duy trì động lực học tập
 
@@ -31,7 +21,7 @@ Buổi chia sẻ được chia thành hai phần chính. Phần đầu do **anh 
 - Khuyến khích người học ghi chú lại lỗi gặp phải và cách xử lý trong quá trình thực hành.
 - Gợi ý nên liên hệ kiến thức đã học với một project thực tế để dễ nhớ và có động lực hơn.
 
-## 9:45 - 10:25 sáng | Automated Prompt Engineering: Enhancing LLM Output Quality
+## 9:45 - 10:30 sáng | Automated Prompt Engineering: Enhancing LLM Output Quality
 
 **Người thuyết trình: Anh Thinh Nguyen**
 
@@ -48,6 +38,32 @@ Buổi chia sẻ được chia thành hai phần chính. Phần đầu do **anh 
 
 Tài liệu trình bày: [Canva bài thuyết trình của anh Thinh Nguyen](https://www.canva.com/design/DAHDM4mSVY0/TW7ReHV12KiH7nLZoCs4sg/edit?utm_content=DAHDM4mSVY0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
+{{< project-image
+src="images/4-EventParticipated/4.1-Event1/thinh-demo-project.png"
+alt="Ảnh demo dự án của anh Thinh Nguyen"
+caption="Hình 4.1.1: Phần demo dự án của anh Thinh Nguyen trong sự kiện."
+>}}
+
+## 10:30 - 11:15 sáng | Chia sẻ cách học và làm việc tại ngân hàng
+
+**Người thuyết trình: Nhóm VIB**
+
+- Đã chia sẻ về môi trường học tập và làm việc trong lĩnh vực ngân hàng.
+- Trình bày cách các kiến thức công nghệ có thể được áp dụng vào công việc thực tế tại ngân hàng.
+- Chia sẻ kinh nghiệm làm việc trong môi trường có yêu cầu cao về tính chính xác, bảo mật và quy trình.
+- Nhấn mạnh tầm quan trọng của kỹ năng tự học, tinh thần trách nhiệm và khả năng phối hợp nhóm.
+- Giúp người tham dự có thêm góc nhìn về cơ hội nghề nghiệp trong lĩnh vực công nghệ tại ngân hàng.
+
+## 11:15 - 12:00 trưa | Chia sẻ kinh nghiệm tuyển dụng và góc nhìn từ HR
+
+**Người thuyết trình: Diễn giả phụ trách tuyển dụng/HR**
+
+- Đã chia sẻ về cách HR đánh giá ứng viên trong quá trình tuyển dụng.
+- Trình bày những yếu tố thường được quan tâm như thái độ học tập, kỹ năng giao tiếp, kinh nghiệm dự án và khả năng làm việc nhóm.
+- Nhấn mạnh tầm quan trọng của CV, cách trình bày kinh nghiệm và cách thể hiện điểm mạnh cá nhân.
+- Chia sẻ một số lưu ý khi tham gia phỏng vấn, đặc biệt là cách trả lời rõ ràng và trung thực.
+- Giúp người tham dự hiểu hơn về việc chuẩn bị hồ sơ, kỹ năng mềm và định hướng nghề nghiệp sau thực tập.
+
 ## Những gì học được
 
 - Hiểu rằng việc học AWS cần có phương pháp rõ ràng, mục tiêu cụ thể và quá trình thực hành đều đặn.
@@ -57,13 +73,15 @@ Tài liệu trình bày: [Canva bài thuyết trình của anh Thinh Nguyen](htt
 - Biết rằng một prompt tốt cần có ngữ cảnh, yêu cầu rõ ràng, định dạng đầu ra và các ràng buộc cụ thể.
 - Nhận ra việc tối ưu prompt cũng giúp tối ưu chi phí khi làm việc với các mô hình AI tính phí theo token.
 - Có thêm góc nhìn về cách xây dựng một ứng dụng AI trên AWS thông qua kiến trúc Proptimizer.
+- Hiểu thêm về môi trường làm việc trong ngân hàng và cách các yêu cầu về bảo mật, quy trình, trách nhiệm ảnh hưởng đến công việc công nghệ.
+- Biết thêm cách HR nhìn nhận ứng viên, từ đó có định hướng tốt hơn trong việc chuẩn bị CV, phỏng vấn và phát triển kỹ năng mềm.
 
 ## Liên hệ với quá trình thực tập
 
 Nội dung sự kiện có liên quan trực tiếp đến quá trình thực tập của tôi. Khi học các dịch vụ AWS và thực hiện project **Campus IT Support Ticket Portal**, tôi cần chia nhỏ nội dung học, ghi chú lỗi, kiểm tra từng bước và liên tục liên hệ kiến thức với hệ thống thực tế.
 
-Bên cạnh đó, phần Prompt Engineering của anh Thinh Nguyen giúp tôi hiểu cách sử dụng AI hiệu quả hơn trong quá trình học và viết tài liệu. Thay vì đặt câu hỏi chung chung, tôi có thể cung cấp rõ vai trò, ngữ cảnh, dữ liệu đầu vào và định dạng mong muốn để nhận được câu trả lời hữu ích hơn.
+Bên cạnh đó, phần Prompt Engineering của anh Thinh Nguyen giúp tôi hiểu cách sử dụng AI hiệu quả hơn trong quá trình học và viết tài liệu. Thay vì đặt câu hỏi chung chung, tôi có thể cung cấp rõ vai trò, ngữ cảnh, dữ liệu đầu vào và định dạng mong muốn để nhận được câu trả lời hữu ích hơn. Phần chia sẻ của nhóm VIB và phần tuyển dụng/HR cũng giúp tôi có thêm góc nhìn thực tế về môi trường làm việc, yêu cầu nghề nghiệp và cách chuẩn bị bản thân sau quá trình thực tập.
 
 ## Kết luận
 
-Sự kiện 1 giúp tôi điều chỉnh lại cách học và cách sử dụng AI trong quá trình học tập. Phần chia sẻ của anh Hoàng Long giúp tôi hiểu tầm quan trọng của phương pháp học và động lực học tập. Phần trình bày của anh Thinh Nguyen giúp tôi hiểu rõ hơn về Prompt Engineering, token, kỹ thuật prompt nâng cao và cách một ứng dụng AI có thể được xây dựng trên AWS.
+Sự kiện 1 giúp tôi điều chỉnh lại cách học, cách sử dụng AI và cách chuẩn bị cho công việc sau thực tập. Phần chia sẻ của anh Hoàng Long giúp tôi hiểu tầm quan trọng của phương pháp học và động lực học tập. Phần trình bày của anh Thinh Nguyen giúp tôi hiểu rõ hơn về Prompt Engineering, token, kỹ thuật prompt nâng cao và cách một ứng dụng AI có thể được xây dựng trên AWS. Hai phần chia sẻ cuối giúp tôi hiểu thêm về môi trường làm việc trong ngân hàng và những yếu tố HR thường quan tâm khi tuyển dụng.

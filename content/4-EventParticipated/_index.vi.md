@@ -27,7 +27,7 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 ### [Event 1](4.1-Event1/)
 &emsp;**Tên sự kiện:** Buổi chia sẻ phương pháp học tập, động lực học và Prompt Engineering
 
-&emsp;**Thời gian:** Khoảng 09:00 - 10:25
+&emsp;**Thời gian:** Khoảng 09:00 - 12:00
 
 &emsp;**Diễn giả:** Anh Hoàng Long và anh Thinh Nguyen
 
