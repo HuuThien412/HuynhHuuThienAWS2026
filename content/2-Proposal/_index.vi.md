@@ -106,6 +106,12 @@ Khi ticket được tạo hoặc cập nhật, **DynamoDB Streams** kích hoạt
 
 ### 6. API đã triển khai
 
+{{< project-image
+src="images/5-Workshop/5.3-AWS-Services/5.3.3-Amazon-API-Gateway/routes.png"
+alt="Các route API Gateway đã triển khai"
+caption="Hình 2.2: Các route API Gateway dùng cho chức năng quản lý ticket."
+>}}
+
 | Method | Route | Chức năng |
 | --- | --- | --- |
 | `POST` | `/tickets` | Tạo ticket mới |
@@ -121,6 +127,12 @@ Các route đều được bảo vệ bằng JWT. Các thao tác quản trị đ
 ### 7. Mô hình dữ liệu chính
 
 #### Bảng CampusSupportTickets
+
+{{< project-image
+src="images/5-Workshop/5.3-AWS-Services/5.3.5-Amazon-DynamoDB/ticket-table-overview.png"
+alt="Bảng DynamoDB CampusSupportTickets"
+caption="Hình 2.3: Tổng quan bảng DynamoDB lưu dữ liệu ticket."
+>}}
 
 | Thuộc tính | Mô tả |
 | --- | --- |

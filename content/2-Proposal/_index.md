@@ -106,6 +106,12 @@ When a ticket is created or updated, **DynamoDB Streams** triggers **CampusSuppo
 
 ### 6. Implemented API
 
+{{< project-image
+src="images/5-Workshop/5.3-AWS-Services/5.3.3-Amazon-API-Gateway/routes.png"
+alt="Implemented API Gateway routes"
+caption="Figure 2.2: API Gateway routes used for ticket-management functions."
+>}}
+
 | Method | Route | Function |
 | --- | --- | --- |
 | `POST` | `/tickets` | Create a new ticket |
@@ -121,6 +127,12 @@ All routes are protected by JWT. Administrative actions are additionally checked
 ### 7. Main Data Model
 
 #### CampusSupportTickets Table
+
+{{< project-image
+src="images/5-Workshop/5.3-AWS-Services/5.3.5-Amazon-DynamoDB/ticket-table-overview.png"
+alt="DynamoDB CampusSupportTickets table"
+caption="Figure 2.3: Overview of the DynamoDB table used to store ticket data."
+>}}
 
 | Attribute | Description |
 | --- | --- |
