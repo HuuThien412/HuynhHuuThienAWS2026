@@ -12,9 +12,15 @@ pre: " <b> 5. </b> "
 
 This workshop documents the implementation process of **Campus IT Support Ticket Portal**, a serverless helpdesk web system for receiving and managing IT support requests in a campus environment.
 
-The completed system allows users to sign in, submit support tickets, upload attachments, and track their ticket status. Admin users can view all tickets, filter requests, update status, add resolution notes, and delete tickets when needed.
+The completed system allows users to register, sign in, submit support tickets, upload attachments, track ticket history, and receive status updates. Administrators can view all tickets, search and filter requests, update ticket status, add processing notes, delete tickets, and receive alerts for high-priority issues.
+
+The frontend is deployed publicly through **AWS Amplify Hosting** and is integrated with GitHub for automatic build and deployment.
 
 #### Architecture
+
+The system uses a serverless architecture on AWS. The frontend communicates with **Amazon Cognito** for authentication and sends authenticated requests to **Amazon API Gateway**. API Gateway validates Cognito JWT tokens before invoking **AWS Lambda** functions.
+
+Lambda handles ticket operations, authorization checks, attachment processing, and integration with **Amazon DynamoDB** and **Amazon S3**. The system also uses **Amazon SES**, **Amazon CloudWatch**, **AWS IAM**, and real-time notification components such as DynamoDB Streams and WebSocket API.
 
 {{< project-image
 src="images/5-Workshop/5.2-System-Architecture/Architecture.jpg"
@@ -26,22 +32,28 @@ caption="Campus IT Support Ticket Portal Architecture"
 
 | Service | Purpose in this workshop |
 | --- | --- |
-| AWS Amplify Hosting | Hosts and deploys the frontend from GitHub |
-| Amazon Cognito | Handles sign-up, sign-in, JWT tokens, and `Users`/`Admins` groups |
-| Amazon API Gateway | Provides API endpoints and validates Cognito JWT tokens |
-| AWS Lambda | Processes ticket operations and permission checks |
-| Amazon DynamoDB | Stores ticket data |
-| Amazon S3 | Stores ticket attachment files |
-| AWS IAM | Grants Lambda permission to access DynamoDB, S3, and CloudWatch |
-| Amazon CloudWatch | Stores logs and metrics for debugging |
-| Amazon Route 53 | Tested for custom domain registration, but the project currently uses the default Amplify domain |
+| AWS Amplify Hosting | Hosts the frontend and deploys updates automatically from GitHub |
+| Amazon Cognito | Handles sign-up, sign-in, sign-out, JWT tokens, and `Users`/`Admins` groups |
+| Amazon API Gateway | Provides HTTP API and WebSocket API endpoints for frontend-backend communication |
+| AWS Lambda | Processes ticket operations, permission checks, notifications, and WebSocket events |
+| Amazon DynamoDB | Stores ticket data and WebSocket connection records |
+| Amazon S3 | Stores ticket attachment files in a private bucket |
+| Amazon SES | Sends ticket confirmation, alert, and status-update emails |
+| Amazon CloudWatch | Stores Lambda/API logs and supports debugging and monitoring |
+| AWS IAM | Grants least-privilege permissions between Lambda and other AWS services |
 
 #### Content
 
-1. [Project result and architecture](5.1-Workshop-overview/)
-2. [Prerequisites](5.2-Prerequiste/)
-3. [Frontend hosting with AWS Amplify](5.3-Amplify-hosting/)
-4. [Authentication with Amazon Cognito](5.4-Cognito-authentication/)
-5. [Backend API with API Gateway and Lambda](5.5-Backend-api/)
-6. [Data storage with DynamoDB and S3](5.6-Data-storage/)
-7. [Testing, monitoring, and cleanup](5.7-Testing-monitoring-cleanup/)
+1. [Project Overview](5.1-project-overview/)
+2. [System Architecture](5.2-system-architecture/)
+3. [AWS Services](5.3-aws-services/)
+   - [AWS Amplify Hosting](5.3-aws-services/5.3.1-aws-amplify-hosting/)
+   - [Amazon Cognito](5.3-aws-services/5.3.2-amazon-cognito/)
+   - [Amazon API Gateway](5.3-aws-services/5.3.3-amazon-api-gateway/)
+   - [AWS Lambda](5.3-aws-services/5.3.4-aws-lambda/)
+   - [Amazon DynamoDB](5.3-aws-services/5.3.5-amazon-dynamodb/)
+   - [Amazon S3](5.3-aws-services/5.3.6-amazon-s3/)
+   - [Amazon SES](5.3-aws-services/5.3.7-amazon-ses/)
+   - [Amazon CloudWatch](5.3-aws-services/5.3.8-amazon-cloudwatch/)
+   - [AWS IAM](5.3-aws-services/5.3.9-aws-iam/)
+   - [Summary](5.3-aws-services/5.3.10-summary/)

@@ -1,5 +1,5 @@
 ---
-title: "5.1 Project Overview"
+title: "Project Overview"
 date: 2026-07-21
 weight: 1
 chapter: false
