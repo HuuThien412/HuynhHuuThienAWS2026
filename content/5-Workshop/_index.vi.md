@@ -42,18 +42,18 @@ caption="Kiến trúc Campus IT Support Ticket Portal"
 | Amazon CloudWatch | Lưu log Lambda/API và hỗ trợ debug, giám sát hệ thống |
 | AWS IAM | Cấp quyền least privilege giữa Lambda và các dịch vụ AWS khác |
 
-#### Nội dung
+#### Nội dung triển khai
 
 1. [Tổng quan dự án](5.1-project-overview/)
-2. [Kiến trúc hệ thống](5.2-system-architecture/)
-3. [Các dịch vụ AWS](5.3-aws-services/)
-   - [AWS Amplify Hosting](5.3-aws-services/5.3.1-aws-amplify-hosting/)
-   - [Amazon Cognito](5.3-aws-services/5.3.2-amazon-cognito/)
-   - [Amazon API Gateway](5.3-aws-services/5.3.3-amazon-api-gateway/)
-   - [AWS Lambda](5.3-aws-services/5.3.4-aws-lambda/)
-   - [Amazon DynamoDB](5.3-aws-services/5.3.5-amazon-dynamodb/)
-   - [Amazon S3](5.3-aws-services/5.3.6-amazon-s3/)
-   - [Amazon SES](5.3-aws-services/5.3.7-amazon-ses/)
-   - [Amazon CloudWatch](5.3-aws-services/5.3.8-amazon-cloudwatch/)
-   - [AWS IAM](5.3-aws-services/5.3.9-aws-iam/)
-   - [Tổng kết](5.3-aws-services/5.3.10-summary/)
+2. [Tổng quan kiến trúc](5.2-system-architecture/)
+3. [Điều kiện chuẩn bị](5.3-prerequisites/)
+4. [Triển khai frontend với AWS Amplify](5.4-deploy-frontend-with-aws-amplify/)
+5. [Cấu hình xác thực với Amazon Cognito](5.5-configure-authentication-with-amazon-cognito/)
+6. [Xây dựng backend API với API Gateway và Lambda](5.6-build-backend-api-with-api-gateway-and-lambda/)
+7. [Lưu dữ liệu ticket với DynamoDB](5.7-store-ticket-data-with-dynamodb/)
+8. [Lưu file đính kèm với Amazon S3](5.8-store-attachments-with-amazon-s3/)
+9. [Cấu hình thông báo và giám sát](5.9-configure-notification-and-monitoring/)
+10. [Bảo mật và IAM permissions](5.10-security-and-iam-permissions/)
+11. [Kiểm thử hệ thống](5.11-testing-the-system/)
+12. [Ảnh chụp hệ thống và kết quả](5.12-system-screenshots-and-result/)
+13. [Kiểm tra tài nguyên và chi phí](5.13-cleanup/)

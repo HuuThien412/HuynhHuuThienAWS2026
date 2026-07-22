@@ -1,5 +1,5 @@
 ﻿---
-title: "Kiến trúc hệ thống"
+title: "Tổng quan kiến trúc"
 date: 2026-07-21
 weight: 2
 chapter: false
@@ -299,4 +299,4 @@ Kiến trúc serverless mang lại các lợi ích:
 - Phù hợp với hệ thống hỗ trợ IT quy mô trường học.
 - Dễ mở rộng trong tương lai.
 
-Phần tiếp theo sẽ trình bày chi tiết các dịch vụ AWS được sử dụng trong dự án.
+Phần tiếp theo sẽ trình bày các điều kiện chuẩn bị trước khi triển khai hệ thống.

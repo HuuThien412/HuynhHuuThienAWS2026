@@ -42,18 +42,18 @@ caption="Campus IT Support Ticket Portal Architecture"
 | Amazon CloudWatch | Stores Lambda/API logs and supports debugging and monitoring |
 | AWS IAM | Grants least-privilege permissions between Lambda and other AWS services |
 
-#### Content
+#### Implementation content
 
 1. [Project Overview](5.1-project-overview/)
-2. [System Architecture](5.2-system-architecture/)
-3. [AWS Services](5.3-aws-services/)
-   - [AWS Amplify Hosting](5.3-aws-services/5.3.1-aws-amplify-hosting/)
-   - [Amazon Cognito](5.3-aws-services/5.3.2-amazon-cognito/)
-   - [Amazon API Gateway](5.3-aws-services/5.3.3-amazon-api-gateway/)
-   - [AWS Lambda](5.3-aws-services/5.3.4-aws-lambda/)
-   - [Amazon DynamoDB](5.3-aws-services/5.3.5-amazon-dynamodb/)
-   - [Amazon S3](5.3-aws-services/5.3.6-amazon-s3/)
-   - [Amazon SES](5.3-aws-services/5.3.7-amazon-ses/)
-   - [Amazon CloudWatch](5.3-aws-services/5.3.8-amazon-cloudwatch/)
-   - [AWS IAM](5.3-aws-services/5.3.9-aws-iam/)
-   - [Summary](5.3-aws-services/5.3.10-summary/)
+2. [Architecture Overview](5.2-system-architecture/)
+3. [Prerequisites](5.3-prerequisites/)
+4. [Deploy Frontend with AWS Amplify](5.4-deploy-frontend-with-aws-amplify/)
+5. [Configure Authentication with Amazon Cognito](5.5-configure-authentication-with-amazon-cognito/)
+6. [Build Backend API with API Gateway and Lambda](5.6-build-backend-api-with-api-gateway-and-lambda/)
+7. [Store Ticket Data with DynamoDB](5.7-store-ticket-data-with-dynamodb/)
+8. [Store Attachments with Amazon S3](5.8-store-attachments-with-amazon-s3/)
+9. [Configure Notification and Monitoring](5.9-configure-notification-and-monitoring/)
+10. [Security and IAM Permissions](5.10-security-and-iam-permissions/)
+11. [Testing the System](5.11-testing-the-system/)
+12. [System Screenshots and Result](5.12-system-screenshots-and-result/)
+13. [Resource and Cost Check](5.13-cleanup/)

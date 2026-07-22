@@ -1,5 +1,5 @@
 ﻿---
-title: "System Architecture"
+title: "Architecture Overview"
 date: 2026-07-21
 weight: 2
 chapter: false
@@ -300,4 +300,4 @@ The serverless architecture provides several benefits:
 - The architecture is suitable for a campus IT support system.
 - The system can be expanded in the future.
 
-The next section presents the AWS services used in the project in greater detail.
+The next section presents the prerequisites required before deploying the system.
