@@ -1,12 +1,10 @@
----
+﻿---
 title: "AWS Services"
 date: 2026-07-21
 weight: 3
 chapter: false
 pre: "<b>5.3 </b>"
 ---
-
-# AWS Services
 
 The Campus IT Support Ticket Portal uses a collection of managed AWS services to implement a complete serverless architecture.
 

@@ -1,12 +1,10 @@
----
+﻿---
 title: "AWS IAM"
 date : 2026-07-21
 weight : 9
 chapter : false
 pre : " <b> 5.3.9 </b> "
 ---
-
-# AWS Identity and Access Management (IAM)
 
 ## Giới thiệu
 

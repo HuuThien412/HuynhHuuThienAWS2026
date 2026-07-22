@@ -1,12 +1,10 @@
----
+﻿---
 title: "Self-Assessment"
 date: 2024-01-01
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
-
-# Self-Assessment
 
 During my internship at **Amazon Web Services Vietnam Co., Ltd.** as an **FCJ Cloud Computing Intern**, I had the opportunity to study AWS services through hands-on practice and apply them to the **Campus IT Support Ticket Portal** project.
 

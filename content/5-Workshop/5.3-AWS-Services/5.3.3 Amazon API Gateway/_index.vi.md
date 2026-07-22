@@ -1,12 +1,10 @@
----
+﻿---
 title: "Amazon API Gateway"
 date: 2026-07-21
 weight: 3
 chapter: false
 pre: "<b>5.3.3 </b>"
 ---
-
-# Amazon API Gateway
 
 ## Giới thiệu
 

@@ -1,12 +1,10 @@
----
+﻿---
 title: "Amazon DynamoDB"
 date: 2026-07-21
 weight: 5
 chapter: false
 pre: "<b>5.3.5 </b>"
 ---
-
-# Amazon DynamoDB
 
 ## Introduction
 

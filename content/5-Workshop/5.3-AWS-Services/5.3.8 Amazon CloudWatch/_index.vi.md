@@ -1,12 +1,10 @@
----
+﻿---
 title : "Amazon CloudWatch"
 date : 2026-07-21
 weight : 8
 chapter : false
 pre : " <b> 5.3.8 </b> "
 ---
-
-# Amazon CloudWatch
 
 ## Giới thiệu
 

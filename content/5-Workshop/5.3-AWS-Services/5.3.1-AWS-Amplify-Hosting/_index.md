@@ -1,12 +1,10 @@
----
+﻿---
 title: "AWS Amplify Hosting"
 date: 2026-07-21
 weight: 1
 chapter: false
 pre: "<b>5.3.1 </b>"
 ---
-
-# AWS Amplify Hosting
 
 ## Introduction
 

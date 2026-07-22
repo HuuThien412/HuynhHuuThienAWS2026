@@ -1,12 +1,10 @@
----
+﻿---
 title: "Amazon Cognito"
 date: 2026-07-21
 weight: 2
 chapter: false
 pre: "<b>5.3.2 </b>"
 ---
-
-# Amazon Cognito
 
 ## Introduction
 

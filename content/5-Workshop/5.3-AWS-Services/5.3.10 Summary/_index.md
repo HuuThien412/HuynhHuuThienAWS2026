@@ -1,12 +1,10 @@
----
+﻿---
 title : "Summary"
 date : 2026-07-21
 weight : 10
 chapter : false
 pre : " <b> 5.3.10 </b> "
 ---
-
-# Summary
 
 ## Introduction
 

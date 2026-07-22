@@ -1,12 +1,10 @@
----
+﻿---
 title: "Chia sẻ và phản hồi"
 date: 2024-01-01
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-
-# Chia sẻ và phản hồi
 
 ## Chia sẻ quá trình thực hiện
 

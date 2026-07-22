@@ -1,12 +1,10 @@
----
+﻿---
 title: "Event 1"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
-
-# Sự kiện 1
 
 **Thời gian sự kiện:** Khoảng 09:00 - 12:00
 

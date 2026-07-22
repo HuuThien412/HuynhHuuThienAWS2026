@@ -1,12 +1,10 @@
----
+﻿---
 title: "Amazon SES"
 date: 2026-07-21
 weight: 7
 chapter: false
 pre: "<b>5.3.7 </b>"
 ---
-
-# Amazon SES
 
 ## Giới thiệu
 

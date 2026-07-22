@@ -1,12 +1,10 @@
----
+﻿---
 title: "Kiến trúc hệ thống"
 date: 2026-07-21
 weight: 2
 chapter: false
 pre: "<b>5.2 </b>"
 ---
-
-# Kiến trúc hệ thống
 
 ## 1. Tổng quan kiến trúc
 

@@ -6,39 +6,25 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
+During my internship and learning process at FCJ, I participated in a sharing session focused on learning methods, career orientation, Prompt Engineering, working in the banking environment, and recruitment experience.
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
-
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
-
-### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** Learning Method, Motivation, and Prompt Engineering Sharing Session  
-
-&emsp;**Date & Time:** Around 09:00 - 12:00  
-
-&emsp;**Speakers:** Mr. Hoang Long and Mr. Thinh Nguyen  
-
-&emsp;**Role:** Attendee  
+The event helped me gain a more practical view of effective learning, using AI for study and work, and preparing myself for recruitment after the internship.
 
 ---
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+## 1. Event 1 - Learning Method, Prompt Engineering, and Career Orientation
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
-
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
-
-&emsp;**Role:** Attendee  
+- **Time:** 9:00 AM - 12:00 PM
+- **Role:** Attendee
+- **Main Topics & Summary:** The event included four main sharing sessions. Mr. Hoang Long presented effective learning methods and how to maintain learning motivation. Mr. Thinh Nguyen presented **Prompt Engineering**, effective communication with AI, prompt optimization, token economics, advanced prompting techniques, and a demo of the **Proptimizer** project. The **VIB** group shared how to learn and work in the banking environment, especially the importance of accuracy, security, process compliance, and responsibility. The final session introduced the recruitment/HR perspective, including how candidates are evaluated, how to prepare a CV, interview preparation, and career orientation.
+- **Timeline:**
+  - **9:00 - 9:45:** Mr. Hoang Long shared learning methods, how to avoid unfocused learning, and how to maintain motivation.
+  - **9:45 - 10:30:** Mr. Thinh Nguyen presented **Automated Prompt Engineering: Enhancing LLM Output Quality** and demonstrated the Proptimizer project.
+  - **10:30 - 11:15:** The **VIB** group shared learning, working, and development experiences in the banking environment.
+  - **11:15 - 12:00:** The recruitment/HR speaker shared recruitment experience and the factors HR usually considers when evaluating candidates.
+- **Key Takeaways:**
+  - Understood the importance of learning with clear goals, planning, and hands-on practice.
+  - Learned how to use Prompt Engineering to ask clearer questions when working with AI.
+  - Understood how an AI application can be built on AWS using services such as Amazon S3, Amazon CloudFront, Amazon Cognito, Amazon API Gateway, AWS Lambda, Amazon Bedrock, Amazon DynamoDB, and Amazon CloudWatch.
+  - Gained a practical view of the banking work environment, especially requirements related to security, process, and responsibility.
+  - Learned how to prepare better for recruitment through CV preparation, communication skills, project experience, and learning attitude.

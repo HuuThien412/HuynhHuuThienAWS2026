@@ -1,12 +1,10 @@
----
+﻿---
 title: "Blogs Posted"
 date: 2024-01-01
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
-
-# Blogs Posted
 
 This section contains three blog posts about my AWS learning process through practical tasks. The posts focus on what I learned while using AWS services step by step, from account setup and cost control to core services, serverless APIs, monitoring, and security.
 

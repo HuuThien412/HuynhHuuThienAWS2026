@@ -1,11 +1,9 @@
----
+﻿---
 title: "Nhật ký thực tập"
 weight: 1
 chapter: true
 pre: " <b> 1. </b> "
 ---
-
-# Nhật ký thực tập
 
 ### Tổng quan
 

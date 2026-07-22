@@ -1,12 +1,10 @@
----
+﻿---
 title: "Blogs Posted"
 date: 2024-01-01
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
-
-# Blogs Posted
 
 Phần này gồm 3 bài blog chia sẻ quá trình học AWS thông qua các tác vụ thực hành. Nội dung tập trung vào những gì tôi học được khi từng bước sử dụng AWS: từ tạo tài khoản, kiểm soát chi phí, IAM, các dịch vụ core, serverless API, monitoring và security.
 

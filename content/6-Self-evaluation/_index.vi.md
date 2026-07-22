@@ -1,12 +1,10 @@
----
+﻿---
 title: "Tự đánh giá"
 date: 2024-01-01
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
-
-# Tự đánh giá quá trình thực tập
 
 Trong quá trình thực tập và học tập tại **Amazon Web Services Vietnam Co., Ltd.** ở vị trí **Thực tập sinh mảng Điện toán đám mây tại FCJ**, tôi đã có cơ hội tìm hiểu các dịch vụ AWS theo hướng thực hành và áp dụng vào project **Campus IT Support Ticket Portal**.
 

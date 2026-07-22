@@ -1,12 +1,10 @@
----
+﻿---
 title: "Amazon S3"
 date: 2026-07-21
 weight: 6
 chapter: false
 pre: "<b>5.3.6 </b>"
 ---
-
-# Amazon S3
 
 ## Introduction
 

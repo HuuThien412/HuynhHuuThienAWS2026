@@ -1,12 +1,10 @@
----
+﻿---
 title: "Các dịch vụ AWS"
 date: 2026-07-21
 weight: 3
 chapter: false
 pre: "<b>5.3 </b>"
 ---
-
-# Các dịch vụ AWS
 
 Campus IT Support Ticket Portal sử dụng nhiều dịch vụ AWS được quản lý để xây dựng một kiến trúc serverless hoàn chỉnh.
 
