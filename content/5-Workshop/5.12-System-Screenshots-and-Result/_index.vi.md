@@ -13,21 +13,33 @@ Phần này tổng hợp các giao diện chính sau khi hệ thống được t
 [https://main.d37atxjbyyp60m.amplifyapp.com/](https://main.d37atxjbyyp60m.amplifyapp.com/)
 
 {{< project-image
-src="images/5-Workshop/5.1-Project-Overview/guest-homepage.png"
+src="images/5-Workshop/5.12-System-Screenshots-and-Result/guest-homepage.png"
 alt="Guest homepage"
 caption="Hình 5.12.1: Giao diện trang chủ khi chưa đăng nhập."
 >}}
 
 {{< project-image
-src="images/5-Workshop/5.1-Project-Overview/user-homepage.png"
+src="images/5-Workshop/5.12-System-Screenshots-and-Result/user-homepage.png"
 alt="User homepage"
 caption="Hình 5.12.2: Giao diện người dùng sau khi đăng nhập."
 >}}
 
 {{< project-image
-src="images/5-Workshop/5.1-Project-Overview/admin-dashboard.png"
+src="images/5-Workshop/5.12-System-Screenshots-and-Result/user-ticket-sections.png"
+alt="User ticket form and tracking sections"
+caption="Hình 5.12.3: Form gửi ticket, lịch sử cá nhân và khu vực tra cứu ticket."
+>}}
+
+{{< project-image
+src="images/5-Workshop/5.12-System-Screenshots-and-Result/admin-dashboard.png"
 alt="Admin dashboard"
-caption="Hình 5.12.3: Giao diện quản trị viên."
+caption="Hình 5.12.4: Dashboard quản trị viên và danh sách ticket."
+>}}
+
+{{< project-image
+src="images/5-Workshop/5.12-System-Screenshots-and-Result/admin-ticket-detail.png"
+alt="Admin ticket detail"
+caption="Hình 5.12.5: Chi tiết ticket, cập nhật trạng thái và ghi chú xử lý của quản trị viên."
 >}}
 
 #### Kết quả
